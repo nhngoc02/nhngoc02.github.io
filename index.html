@@ -42,7 +42,7 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Ngoc Nguyen" width="80">
+          <img src="./assets/images/profile-photo.jpeg" alt="Ngoc Nguyen" width="80">
         </figure>
 
         <div class="info-content">
@@ -73,7 +73,7 @@
 
             <div class="contact-info">
               <p class="contact-title">Email</p>
-
+              <a href="mailto:nhngoc02@gmail.com" class="contact-link">nhngoc02@gmail.com</a>
               <a href="mailto:nnguyen5@trinity.edu" class="contact-link">nnguyen5@trinity.edu</a>
             </div>
 
@@ -167,6 +167,26 @@
         </ul>
 
       </nav>
+      <!-- <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="/about/" class="navbar-link active">About</a>
+          </li>
+          <li class="navbar-item">
+            <a href="/resume/" class="navbar-link">Resume</a>
+          </li>
+          <li class="navbar-item">
+            <a href="/portfolio/" class="navbar-link">Portfolio</a>
+          </li>
+          <li class="navbar-item">
+            <a href="/activities/" class="navbar-link">Activities</a>
+          </li>
+          <li class="navbar-item">
+            <a href="/contact/" class="navbar-link">Contact</a>
+          </li>
+        </ul>
+      </nav> -->
+      
 
 
 
@@ -175,7 +195,7 @@
       <!--
         - #ABOUT
       -->
-
+      
       <article class="about  active" data-page="about">
 
         <header>
@@ -183,11 +203,49 @@
         </header>
 
         <section class="about-text">
+          <h2 id="career-objectives">Career Objectives</h2>
           <p>
-            I'm a student double majoring in Business Analytics & Technology and Computer Science at Trinity University. 
-            I enjoy working with data and solving problems with my technical skills. 
-            Additionally, I add personal touch to my projects and make sure that they are user-friendly and attractive at the same time.
+            I am Ngoc Nguyen, also known as Nora! I am an undergraduate student pursuing a double major in <strong>Business Analytics & Technology</strong> and <strong>Computer Science</strong> at Trinity University. 
           </p>
+          <p>Throughout my studies, I have gained valuable training in <strong>Statistics, Business Analytics, Machine Learning,</strong> and <strong>Programming</strong>, and I'm familiar with Python, R, C++, Scala, and Java, as well as data visualization using Tableau, Matplotlib, and Seaborn. I have completed Data Science projects and taken part in Business Analytics competitions, where I implemented various machine learning models like Ridge, Lasso, Decision Tree, K-Means, and Random Forest Besides, I am actively contributing as a <strong>Data Science Student Researcher</strong> at Trinity University's Physics and Neuroscience Department. My work involves visualization on molecular data for paper publication and implementing unsupervised machine learning methods, such as NMFk and K-Means, to characterize the damage factors of neurodegenerative diseases.</p>
+            <div class="image-container">
+              <div class="image-wrapper">
+                <img src="./assets/images/aps-conference.JPG" width="300" class="align-left" />
+                <em class="image-description">APS Conference 2023, Las Vegas, NV</em>
+              </div>
+              <div class="image-wrapper">
+                <img src="./assets/images/bac-tu-team.png"  width="300" class="align-right" />
+                <em class="image-description">Business Analytics Competition & Conference 2023 at Manhattan College, New York, NY</em>
+              </div>
+            </div>
+          <br>
+          <p>I am currently a <strong>Software & Analytics Intern</strong> at <strong>CDK Global</strong>, where I actively collaborate in developing <strong>3 Rest APIs</strong> by writing Java-based Spring Boot code and creating OpenAPI Specifications, enabling efficient data retrieval on repair orders, inventory parts, and accounting information for CDK internal and external stakeholders. Additionally, I analyze CDK Global Dealer Management System and Enterprise System configuration data from the company's <strong>Snowflake</strong> and <strong>Oracle Database</strong>, to address data mapping issues resulting from mergers and acquisitions. I also conduct predictive analysis to forecasting the frequency of different query types and common query timeframes, which helps optimize the API scaling process.</p>
+          <div class="image-container">
+            <div class="image-wrapper">
+              <img src="./assets/images/cdk-intern.JPEG" width="400" class="align-center" />
+              <em class="image-description">CDK Global office, Austin, TX</em>
+            </div>
+          </div>
+
+          <p>More details about my work and projects can be found in the <strong>Resume</strong> & <strong>Portfolio</strong> tabs.</p>
+          <!-- <p>More details about my projects can be found below:</p>
+          <p class="text-center"><a href="https://nhngoc02.github.io/portfolio/" class="btn btn--info">View My Portfolio</a></p> -->
+          
+          <h2 id="hobbies">Hobbies</h2>
+          <h3 id="photography">Photography</h3>
+          <p>I love playingaround with camera, especially when I'm traveling and exploring nature. Although I am far from a professional, I do it purely for fun. Capturing breathtaking scenes and moments during my journeys allows me to preserve cherished memories and relive those unforgettable experiences. Through my photography, I aim to capture the essence and beauty of the places I visit, creating a visual journal that reflects the joy and wonder of those great times.</p>
+          <div class="image-container">
+            <div class="image-wrapper">
+              <img src="./assets/images/photo-1.JPG" width="400" class="align-left" />
+              <em class="image-description">Terrace Fields, taken by me at Sapa, Vietnam</em>
+            </div>
+            <div class="image-wrapper">
+              <img src="./assets/images/photo-2.JPG" width="400" class="align-right" />
+              <em class="image-description">Under a summer drizzle, taken by me at Sapa, Vietnam</em>
+            </div>
+          </div>
+          <!-- <h3 id="cooking">Cooking</h3> -->
+            
       
         </section>
 
@@ -458,6 +516,29 @@
           </div>
 
           <ul class="project-list">
+            <li class="project-item  active" data-filter-item data-category="Data Science">
+              <a href="https://drive.google.com/drive/folders/1_zltyRAnT6I8L1DcARR4R3WkMaxVuBiu?usp=sharing">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/bac-2023.jpeg" alt="bac-project" loading="lazy">
+                </figure>
+
+                <h3 class="project-title"><strong>Third prize:</strong> Business Analytics Competition at Manhattan College 2023</h3>
+                <p class="project-description" style="font-family: 'Poppins', sans-serif; color: #ffffff; font-size: 12px; margin-left: 24px;">A comprehensive analysis on Food Safety in Sub-Saharan Africa and Central/Caribbean America.</p>
+                <p class="project-category">Data Science</p>
+
+              </a>
+            </li>
+            <!-- <hr />
+            <h3 id="business-analytics-competition-2023">Business Analytics Competition & Conference at Manhattan College 2023: Food Safety in Sub-Saharan Africa and Central/Caribbean America</h3>
+            <p><a href="https://drive.google.com/file/d/10zOJNCJAwLWbuiKF4rU2tw7jRyIuPxDn/view?usp=sharing"><img src="https://drive.google.com/file/d/10zOJNCJAwLWbuiKF4rU2tw7jRyIuPxDn/view?usp=sharing" alt="Open Research Poster" /></a></p>
+            <p><a href="https://drive.google.com/file/d/10zOJNCJAwLWbuiKF4rU2tw7jRyIuPxDn/view?usp=sharing"><img src="https://drive.google.com/file/d/10zOJNCJAwLWbuiKF4rU2tw7jRyIuPxDn/view?usp=sharing" alt="Article about Trinity Team at BAC2023" /></a></p>
+            <p>Over the course of a three-month research project and a two-day hackathon, I collaborated in a team of four students to analyze 20-year data from diverse sources, including FAOSTAT, World Bank, and the United Nations. Our efforts led us to discover valuable insights on food safety in Sub-Saharan Africa and Central/Caribbean America, ultimately securing us a commendable third-place victory out of 24 competing colleges.</p> -->
+
 
             <li class="project-item  active" data-filter-item data-category="Data Science">
               <a href="https://github.com/nhngoc02/Dell_MWD">
@@ -471,26 +552,8 @@
                 </figure>
 
                 <h3 class="project-title">Dell Supply Chain Analytics</h3>
-
+                <p class="project-description" style="font-family: 'Poppins', sans-serif; color: #ffffff; font-size: 12px; margin-left: 24px;">Predictive analysis on the number of missing, wronged or damaged (MWD) order units of Dell's different carriers.</p>
                 <p class="project-category">Data Science</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="Computer Science">
-              <a href="https://github.com/nhngoc02/scala-space-game">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/space-game-project.png" alt="space-game-project" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Scala Space Game</h3>
-
-                <p class="project-category">Computer Science</p>
 
               </a>
             </li>
@@ -507,6 +570,43 @@
                 </figure>
 
                 <h3 class="project-title">Ames House Price Prediction</h3>
+                <p class="project-description" style="font-family: 'Poppins', sans-serif; color: #ffffff; font-size: 12px; margin-left: 24px;">Prediction model for house prices in the Ames housing dataset from 81 variables of house characteristics.</p>
+                <p class="project-category">Data Science</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Computer Science">
+              <a href="https://github.com/nhngoc02/scala-space-game">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/space-game-project.jpg" alt="space-game-project" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Scala Space Game</h3>
+                <p class="project-description" style="font-family: 'Poppins', sans-serif; color: #ffffff; font-size: 12px; margin-left: 24px;">An engaging Galaga-style space shooting game using Scala programming language.</p>
+                <p class="project-category">Computer Science</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Data Science">
+              <a href="https://trinity0-my.sharepoint.com/:x:/r/personal/nnguyen5_trinity_edu/Documents/AdventureWorks_Dashboard.xlsx?d=wa0bac37c38024072aecab20c3be61bae&csf=1&web=1&e=Twq9BH">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/excel-dashboard.jpg" alt="credit-card-project" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Excel Dashboard: Analyze total sales and growth trends for AdventureWorks.</h3>
+                <p class="project-description" style="font-family: 'Poppins', sans-serif; color: #ffffff; font-size: 12px; margin-left: 24px;"></p>
 
                 <p class="project-category">Data Science</p>
 
@@ -525,11 +625,12 @@
                 </figure>
 
                 <h3 class="project-title">Credit Card behavior analysis</h3>
-
+                <p class="project-description" style="font-family: 'Poppins', sans-serif; color: #ffffff; font-size: 12px; margin-left: 24px;">Regression model & hypothesis testing to explore the sample applicants’ credit card behaviors and other personal and financial aspects.</p>
                 <p class="project-category">Data Science</p>
 
               </a>
             </li>
+
 
 
           </ul>
@@ -552,9 +653,27 @@
           <h2 class="h2 article-title">Activities</h2>
         </header>
 
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
+        <!-- <section class="blog-posts"> -->
+          <h2 id="career-objectives">Art & Cultural Coordinator of Trinity Vietnamese Student Association (VSA)</h2>
+          <p>
+            As the Art & Cultural Coordinator of Trinity Vietnamese Student Association (VSA) for 2 years, I have designed content structures for various events and meetings, engaging 50 club members. From organizing a Spring Roll Cooking Class with 50 attendants to orchestrating a Vietnamese cuisine demonstration and meal preparation for 200 students, as well as organizing Vietnamese game nights, I aim to create memorable and enriching cultural experiences. Additionally, I actively participated in the lunar new year fashion show, showcasing the beauty of Vietnamese traditional attire, Áo dài.
+          </p>
+            <div class="image-container">
+              <div class="image-wrapper">
+                <img src="./assets/images/vsa-1.png" width="280" class="align-left" />
+                <em class="image-description">Trinity University Lunar New Year show 2023, San Antonio, TX</em>
+              </div>
+              <div class="image-wrapper">
+                <img src="./assets/images/vsa-2.png" width="280" class="align-center" />
+                <em class="image-description">Trinity University Lunar New Year show 2023, San Antonio, TX</em>
+              </div>
+              <div class="image-wrapper">
+                <img src="./assets/images/vsa-3.png"  width="280" class="align-right" />
+                <em class="image-description">Vietnamese Cuisine demonstration, San Antonio, TX</em>
+              </div>
+            </div>
+          <br>
+          <!-- <ul class="blog-posts-list">
 
             <li class="blog-post-item">
               <a href="#">
@@ -724,9 +843,9 @@
               </a>
             </li>
 
-          </ul>
+          </ul> -->
 
-        </section>
+        <!-- </section> -->
 
       </article>
 
