@@ -67,6 +67,7 @@
   --vegas-gold: hsl(45, 54%, 58%);
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
+  --light-blue: hsl(202, 100%, 78%);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
 
   /**
@@ -1936,11 +1937,11 @@ p {
 
 /* Custom CSS for hyperlink styling */
 a {
-  color: #8fc0f4; /* Set the link color to blue (#007BFF) */
+  color: var(--light-blue); /* Set the link color to blue (#007BFF) */
   text-decoration: none; /* Remove the default underline on the link */
   display: inline; /* Set the anchor tag to be inline */
 }
 
 a:hover {
-  color: #e68b6b; /* Set the link color to orange (#FF4500) when hovering over the link */
+  color: var(--orange-yellow-crayola); /* Set the link color to orange (#FF4500) when hovering over the link */
 }
