@@ -439,8 +439,8 @@ main {
 }
 
 .social-item .social-link {
-  color: var(--light-gray-70);
-  font-size: 18px;
+  color: var(--orange-yellow-crayola);
+  font-size: 30px;
 }
 
 
@@ -1933,3 +1933,14 @@ p {
 }
 
 
+
+/* Custom CSS for hyperlink styling */
+a {
+  color: #8fc0f4; /* Set the link color to blue (#007BFF) */
+  text-decoration: none; /* Remove the default underline on the link */
+  display: inline; /* Set the anchor tag to be inline */
+}
+
+a:hover {
+  color: #e68b6b; /* Set the link color to orange (#FF4500) when hovering over the link */
+}
