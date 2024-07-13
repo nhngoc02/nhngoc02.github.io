@@ -63,6 +63,7 @@
 
   --jet: hsl(0, 0%, 22%);
   --jet-60: hsl(0, 0%, 22%, 0.6);
+  --jet-80: hsl(0, 0%, 22%, 0.8);
   --onyx: hsl(240, 1%, 17%);
   --eerie-black-1: hsl(240, 2%, 13%);
   --eerie-black-2: hsl(240, 2%, 12%);
@@ -839,7 +840,7 @@ main {
 }
 
 .timeline-text {
-  color: var(--jet-60);
+  color: var(--jet-80);
   font-weight: var(--fw-300);
   line-height: 1.6;
   max-width: 700px; 
