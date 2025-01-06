@@ -81,6 +81,7 @@
   --blue: hsl(202, 100%, 78%);
   --light-gray-blue:hsl(201, 54%, 95%);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
+  --dark-blue: hsl(205, 62%, 54%);
 
   /**
    * typography
@@ -1967,7 +1968,7 @@ p {
 
 /* Custom CSS for hyperlink styling */
 a {
-  color: var(--blue); /* Set the link color to blue (#007BFF) */
+  color: var(--dark-blue); /* Set the link color to blue (#007BFF) */
   text-decoration: none; /* Remove the default underline on the link */
   display: inline; /* Set the anchor tag to be inline */
 }
