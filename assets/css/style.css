@@ -1886,14 +1886,19 @@ textarea.form-input::-webkit-resizer { display: none; }
   .contacts-list { grid-template-columns: 1fr; }
 
   .contact-info :is(.contact-link) {
-    white-space: nowrap;
-    overflow: hidden;
+    white-space: nowrap; 
+    overflow: hidden; 
     text-overflow: ellipsis;
+    /* white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word; */
   }
 
   .contact-info :is(.contact-link, time, address) {
     --fs-7: 14px;
     font-weight: var(--fw-300);
+    word-break: break-all;
+    overflow-wrap: anywhere;
   }
 
   .separator:last-of-type {
@@ -1976,3 +1981,4 @@ a {
 a:hover {
   color: var(--mailibu-blue); /* Set the link color to orange (#FF4500) when hovering over the link */
 }
+
