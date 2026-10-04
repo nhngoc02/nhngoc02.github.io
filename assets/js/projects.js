@@ -75,20 +75,6 @@ const PROJECTS = [
   },
   {
     category: 'data',
-    title: 'Diversity Sampling of Antibody Sequences',
-    label: 'Research, Trinity Neuroscience Lab',
-    image: null,
-    summary: 'Unsupervised clustering to pick diverse antibody sets for discovery screens.',
-    context: 'Labs screening antibodies want sets of sequences that are as diverse as possible, in sizes that match their screening capacity.',
-    approach: 'I wrote Python pipelines that download and aggregate sequences from the Observed Antibody Space database, then cluster them with Diamond and MMseqs2 so diverse representatives can be sampled from each cluster.',
-    outcome: 'A reusable, command-line pipeline with a documented conda environment for collecting and clustering antibody sequences.',
-    tools: ['Python', 'Diamond', 'MMseqs2', 'Linux', 'Unsupervised ML'],
-    links: [
-      { label: 'View on GitHub', url: 'https://github.com/nhngoc02/antibody-research' }
-    ]
-  },
-  {
-    category: 'data',
     title: 'Credit Card Behavior Analysis',
     label: 'Statistics project',
     image: './assets/images/credit-card-project.jpg',
@@ -177,17 +163,18 @@ const PROJECTS = [
   },
   {
     category: 'swe',
-    title: 'License Plate Detection with YOLO',
-    label: 'Computer vision project',
-    date: '2024',
+    title: 'A YOLO Model for Car License Plates Detection and Recognition',
+    label: 'Published paper, ICTIS 2025',
     image: './assets/images/license-plate-project.jpg',
-    summary: 'Training and fine-tuning YOLOv8 models across two license plate datasets.',
-    context: 'I wanted to see how well YOLO object detection models find license plates, and how well a model trained on one dataset transfers to another.',
-    approach: 'I trained YOLOv8 models on the CCPD and UFPR-ALPR datasets at several training sizes (200 to 1,800 images), tuned hyperparameters, and fine-tuned across datasets to test cross-dataset performance.',
-    outcome: 'The tuned CCPD model reached precision of 1.0 and mAP50 of 0.995 on its test set. The report also documents where cross-dataset transfer broke down.',
-    tools: ['Python', 'YOLOv8', 'Ultralytics', 'Jupyter'],
+    summary: 'YOLO license plate detection across datasets from China, Brazil, and Taiwan.',
+    context: 'Most license plate detection studies train and test on plates from a single country, even though large datasets exist for many regions. I wanted to see how well YOLO models handle plates from different places, and whether mixing regions helps or hurts.',
+    approach: 'With Eva Tuba and Milan Tuba, I trained YOLOv8 models on three datasets (CCPD from China, UFPR-ALPR from Brazil, and AOLP from Taiwan) and on a combined dataset covering all three, then compared them on precision, mAP50, and mAP50-95. I presented the work at ICTIS 2025.',
+    outcome: 'All four models reached a test mAP50 above 0.98, with the CCPD and AOLP models at 0.995. Scores at stricter IoU thresholds (mAP50-95 between 0.60 and 0.73) showed that tighter bounding boxes are the main area for improvement. Published by Springer in Smart Innovation, Systems and Technologies, vol. 126.',
+    tools: ['Python', 'YOLOv8', 'Ultralytics', 'Computer vision', 'Jupyter'],
     links: [
-      { label: 'View on GitHub', url: 'https://github.com/nhngoc02/license_plate_detection' }
+      { label: 'Read the paper', url: 'https://link.springer.com/chapter/10.1007/978-981-95-1361-1_50' },
+      { label: 'Google Scholar', url: 'https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xRUDogkAAAAJ&citation_for_view=xRUDogkAAAAJ:9yKSN-GCB0IC' },
+      { label: 'View code on GitHub', url: 'https://github.com/nhngoc02/license_plate_detection' }
     ]
   },
   {

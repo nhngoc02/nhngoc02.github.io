@@ -26,6 +26,7 @@ pageLinks.forEach(link => {
 });
 
 showPage(location.hash.slice(1) || 'about', false);
+window.addEventListener('hashchange', () => showPage(location.hash.slice(1), false));
 
 
 // ---------- Portfolio: category tabs and project cards ----------

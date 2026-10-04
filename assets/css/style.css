@@ -164,6 +164,9 @@ strong { font-weight: 600; }
 
 .gallery figure { margin: 0; }
 
+.gallery-1 { grid-template-columns: 1fr; }
+.gallery.gallery-1 img { aspect-ratio: auto; object-fit: contain; background: #fff; }
+
 .gallery img {
   width: 100%;
   aspect-ratio: 4 / 3;
