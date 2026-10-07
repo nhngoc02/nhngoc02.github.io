@@ -9,7 +9,7 @@ I'm a Project Manager at Applied Materials working on workflow automation, busin
 ## What's on the site
 
 - **About**: who I am and what I work on
-- **Resume**: experience, skills, and education, plus a one-page [PDF](./assets/NoraNguyen_Resume.pdf)
+- **Resume**: experience, skills, and education, plus a one-page [PDF](./assets/Nora_Nguyen_Resume.pdf)
 - **Portfolio**: projects split into *Data Analysis* and *Software Engineering* tabs. Each project opens a short popup with the context, what I did, and the outcome before linking out to the project.
 - **Activities**: competitions, conferences, and student organizations
 
