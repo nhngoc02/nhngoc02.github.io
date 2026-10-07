@@ -330,6 +330,9 @@ strong { font-weight: 600; }
 
 /* ---------- Activities ---------- */
 
+.activity-list { margin: 0 0 1em; padding-left: 1.1em; }
+.activity-list li { margin-bottom: 4px; }
+
 .activity + .activity { border-top: 1px solid var(--border); margin-top: 40px; }
 .activity .section-title { margin-top: 40px; }
 .activity:first-child .section-title { margin-top: 0; }

@@ -242,20 +242,32 @@
         <h2 class="page-title">Activities</h2>
 
         <article class="activity">
-          <h3 class="section-title">ICTIS 2025, International Conference on ICT for Intelligent Systems</h3>
+          <h3 class="section-title">ICTIS 2025, International Conference on Information and Communication Technology for Intelligent Systems</h3>
           <p>
             In May 2025 I presented my paper <em>A YOLO Model for Car License Plates Detection and Recognition</em>,
-            written with Eva Tuba and Milan Tuba, at ICTIS 2025. Most license plate studies test on a single country's
-            plates, so we trained YOLO models on datasets from China (CCPD), Brazil (UFPR-ALPR), and Taiwan (AOLP), plus
-            a combined dataset, and compared how the variety of plate styles affects accuracy and generalization.
+            written with Eva Tuba and Milan Tuba, in person at ICTIS 2025, held at Cornell University's NYC-ILR
+            Conference Center in New York. Most license plate research tests on plates from a single country. We wanted to know how
+            well one detection approach holds up across very different plate styles, so I trained YOLOv8 object detection
+            models on images from three countries and on a mix of all three:
           </p>
+          <ul class="activity-list">
+            <li><strong>Model 1:</strong> Chinese license plates (CCPD dataset)</li>
+            <li><strong>Model 2:</strong> Brazilian license plates (UFPR-ALPR dataset)</li>
+            <li><strong>Model 3:</strong> Taiwanese license plates (AOLP dataset)</li>
+            <li><strong>Model 4:</strong> a combined dataset with plates from all three countries</li>
+          </ul>
           <p>
-            Every model reached a test mAP50 above 0.98. The harder part was tighter bounding boxes at stricter IoU
-            thresholds (mAP50-95 of 0.60 to 0.73), which is where I see the most room for future work.
+            All four models were very good at finding the license plate in a photo, scoring above 98 out of 100 when a
+            prediction only had to overlap the real plate by at least half (mAP50 above 0.98 on the test sets). Drawing a
+            box that hugs the plate's exact edges was harder: under much stricter matching, scores fell to between 60 and
+            73 out of 100 (mAP50-95 of 0.60 to 0.73). That precision is where I see the most room for future work.
           </p>
+          <div class="gallery gallery-2">
+            <figure><img src="./assets/images/ictis-presenting.jpg" alt="Nora presenting her YOLO license plate research at ICTIS 2025" loading="lazy"><figcaption>Presenting at ICTIS 2025, New York, NY</figcaption></figure>
+            <figure><img src="./assets/images/ictis-group.jpg" alt="ICTIS 2025 presenters and organizers in front of the conference banner" loading="lazy"><figcaption>With fellow presenters and organizers</figcaption></figure>
+          </div>
           <div class="gallery gallery-1">
-            <figure><img src="./assets/images/ictis-model-output.jpg" alt="Model detections on CCPD license plates with IoU and confidence scores" loading="lazy"><figcaption>Model 1 detections on CCPD test images</figcaption></figure>
-            <figure><img src="./assets/images/ictis-datasets.jpg" alt="Sample car images from the license plate datasets" loading="lazy"><figcaption>Sample images from the datasets</figcaption></figure>
+            <figure><img src="./assets/images/ictis-model-output.jpg" alt="Model detections on Chinese license plates, each labeled with overlap and confidence scores" loading="lazy"><figcaption>Model 1 finding plates in test photos. The two boxes show the real plate and the model's prediction.</figcaption></figure>
           </div>
           <p>
             Paper: <a href="https://link.springer.com/chapter/10.1007/978-981-95-1361-1_50" target="_blank" rel="noopener">Springer, Smart Innovation, Systems and Technologies, vol. 126</a> ·
