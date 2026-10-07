@@ -195,9 +195,9 @@ strong { font-weight: 600; }
 .entry li { margin-bottom: 6px; }
 
 .plain-list { list-style: none; padding: 0; }
-.plain-list li { padding: 8px 0; border-bottom: 1px solid var(--border); display: flex; flex-wrap: wrap; gap: 4px 6px; align-items: baseline; }
+.plain-list li { padding: 8px 0; border-bottom: 1px solid var(--border); display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 16px; align-items: baseline; }
 .plain-list li:last-child { border-bottom: 0; }
-.plain-list .date { margin-left: auto; }
+.plain-list .date { text-align: right; }
 
 .skills { display: grid; grid-template-columns: 180px 1fr; gap: 10px 24px; margin: 0; }
 .skills dt { font-weight: 600; }
@@ -355,6 +355,8 @@ strong { font-weight: 600; }
   .page-title { font-size: 1.6rem; }
   .gallery-3 { grid-template-columns: repeat(2, 1fr); }
   .skills { grid-template-columns: 1fr; gap: 2px; }
+  .plain-list li { grid-template-columns: 1fr; }
+  .plain-list .date { text-align: left; }
   .skills dd { margin-bottom: 12px; }
   [data-dialog-body] { padding: 24px 20px; }
 }

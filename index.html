@@ -217,10 +217,12 @@
 
         <h3 class="section-title">Leadership</h3>
         <ul class="plain-list">
-          <li><strong>Vice President</strong>, Trinity University Data Analytics Club <span class="date">Aug 2024 – 2025</span></li>
-          <li><strong>Vice President of Education</strong>, TWIST, Trinity Women in Science and Technology <span class="date">Aug 2022 – May 2023</span></li>
-          <li><strong>Art &amp; Cultural Coordinator</strong>, Trinity Vietnamese Student Association</li>
-          <li><strong>Training Co-host</strong>, PISE, Project Incubator for Young Social Entrepreneurs <span class="date">Apr – Aug 2021</span></li>
+          <li><span><strong>Video Podcast Program Manager</strong>, <a href="https://visemi.org/" target="_blank" rel="noopener">Visemi Foundation</a> (Vietnamese Professionals in Semiconductor), <a href="https://visemi.org/initiatives/visemi-chip-chat-podcast/" target="_blank" rel="noopener">Chip Chat podcast</a></span> <span class="date">Nov 2025 – Present</span></li>
+          <li><span><strong>Co-host</strong>, Applied Materials Women Professional Development Network</span> <span class="date">Jul 2025 – Present</span></li>
+          <li><span><strong>Vice President</strong>, Trinity University Data Analytics Club</span> <span class="date">Aug 2024 – 2025</span></li>
+          <li><span><strong>Vice President of Education</strong>, TWIST, Trinity Women in Science and Technology</span> <span class="date">Aug 2022 – May 2023</span></li>
+          <li><span><strong>Art &amp; Cultural Coordinator</strong>, Trinity Vietnamese Student Association</span></li>
+          <li><span><strong>Training Co-host</strong>, PISE, Project Incubator for Young Social Entrepreneurs</span> <span class="date">Apr – Aug 2021</span></li>
         </ul>
       </section>
 
@@ -245,29 +247,18 @@
           <h3 class="section-title">ICTIS 2025, International Conference on Information and Communication Technology for Intelligent Systems</h3>
           <p>
             In May 2025 I presented my paper <em>A YOLO Model for Car License Plates Detection and Recognition</em>,
-            written with Eva Tuba and Milan Tuba, in person at ICTIS 2025, held at Cornell University's NYC-ILR
-            Conference Center in New York. Most license plate research tests on plates from a single country. We wanted to know how
-            well one detection approach holds up across very different plate styles, so I trained YOLOv8 object detection
-            models on images from three countries and on a mix of all three:
+            written with Dr. Eva Tuba and Dr. Milan Tuba, in person at ICTIS 2025 at Cornell University's NYC-ILR
+            Conference Center in New York. Most license plate research tests plates from only one country. The main goal
+            of the research is to see how well YOLO object detection models handle very different plate styles, using
+            datasets from China (CCPD), Brazil (UFPR-ALPR), and Taiwan (AOLP), plus a combined set of all three. The
+            trained models were great at finding license plates, scoring above 98 out of 100 (mAP50 above 0.98), but
+            drawing a box that fits the plate's exact edges was harder (mAP50-95 of 0.60 to 0.73), which is where I see
+            the most room for future work.
           </p>
-          <ul class="activity-list">
-            <li><strong>Model 1:</strong> Chinese license plates (CCPD dataset)</li>
-            <li><strong>Model 2:</strong> Brazilian license plates (UFPR-ALPR dataset)</li>
-            <li><strong>Model 3:</strong> Taiwanese license plates (AOLP dataset)</li>
-            <li><strong>Model 4:</strong> a combined dataset with plates from all three countries</li>
-          </ul>
-          <p>
-            All four models were very good at finding the license plate in a photo, scoring above 98 out of 100 when a
-            prediction only had to overlap the real plate by at least half (mAP50 above 0.98 on the test sets). Drawing a
-            box that hugs the plate's exact edges was harder: under much stricter matching, scores fell to between 60 and
-            73 out of 100 (mAP50-95 of 0.60 to 0.73). That precision is where I see the most room for future work.
-          </p>
-          <div class="gallery gallery-2">
-            <figure><img src="./assets/images/ictis-presenting.jpg" alt="Nora presenting her YOLO license plate research at ICTIS 2025" loading="lazy"><figcaption>Presenting at ICTIS 2025, New York, NY</figcaption></figure>
-            <figure><img src="./assets/images/ictis-group.jpg" alt="ICTIS 2025 presenters and organizers in front of the conference banner" loading="lazy"><figcaption>With fellow presenters and organizers</figcaption></figure>
-          </div>
-          <div class="gallery gallery-1">
-            <figure><img src="./assets/images/ictis-model-output.jpg" alt="Model detections on Chinese license plates, each labeled with overlap and confidence scores" loading="lazy"><figcaption>Model 1 finding plates in test photos. The two boxes show the real plate and the model's prediction.</figcaption></figure>
+          <div class="gallery gallery-3">
+            <figure><img src="./assets/images/ictis-presenting.jpg" alt="Nora presenting her YOLO license plate research at ICTIS 2025" loading="lazy"></figure>
+            <figure><img src="./assets/images/ictis-group.jpg" alt="ICTIS 2025 presenters and organizers in front of the conference banner" loading="lazy"></figure>
+            <figure><img src="./assets/images/ictis-result.jpg" alt="Model detecting a Chinese license plate, labeled with overlap and confidence scores" loading="lazy"></figure>
           </div>
           <p>
             Paper: <a href="https://link.springer.com/chapter/10.1007/978-981-95-1361-1_50" target="_blank" rel="noopener">Springer, Smart Innovation, Systems and Technologies, vol. 126</a> ·
