@@ -10,7 +10,7 @@ I'm a Project Manager at Applied Materials working on workflow automation, busin
 
 - **About**: who I am and what I work on
 - **Resume**: experience, skills, and education, plus a one-page [PDF](./assets/Nora_Nguyen_Resume.pdf)
-- **Portfolio**: projects split into *Data Analysis* and *Software Engineering* tabs. Each project opens a short popup with the context, what I did, and the outcome before linking out to the project.
+- **Portfolio**: all projects by default, with *Data Analysis* and *Software Engineering* tabs to filter them. Each project opens a short popup with the context, what I did, and the outcome before linking out to the project.
 - **Activities**: competitions, conferences, and student organizations
 
 <p>

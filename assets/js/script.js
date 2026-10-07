@@ -48,7 +48,7 @@ function renderProjects(category) {
   grid.innerHTML = '';
 
   PROJECTS.forEach((project, index) => {
-    if (project.category !== category) return;
+    if (category !== 'all' && project.category !== category) return;
 
     const thumb = project.image
       ? `<img src="${project.image}" alt="" loading="lazy">`
@@ -77,7 +77,7 @@ segments.forEach(segment => {
   });
 });
 
-renderProjects('data');
+renderProjects('all');
 
 
 // ---------- Project details popup ----------

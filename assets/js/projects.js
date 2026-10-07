@@ -12,22 +12,7 @@
  *   links     buttons at the bottom of the popup; the first one is the main link
  */
 const PROJECTS = [
-  // ---------- Data Analysis ----------
-  {
-    category: 'data',
-    title: 'Pricing Performance Analysis for Goodwill San Antonio',
-    label: 'Consulting project',
-    date: 'Feb – May 2024',
-    image: './assets/images/goodwill-project.jpg',
-    summary: 'Pricing performance and operations analysis for 28 Goodwill San Antonio stores.',
-    context: 'Goodwill San Antonio wanted to understand how well its pricing strategies were working across its 28 stores.',
-    approach: 'I defined 3 performance metrics (pricing variance, pricing efficiency, and total revenue) and evaluated them against 2.5 million historical data points, then built an interactive Tableau dashboard so store managers and associates could explore the results.',
-    outcome: 'Delivered consulting reports and the dashboard to Goodwill managers, giving them a shared way to compare pricing performance across stores.',
-    tools: ['Tableau', 'Data analysis', 'Consulting'],
-    links: [
-      { label: 'View Tableau dashboard', url: 'https://public.tableau.com/app/profile/ngoc.nguyen5931/viz/PricingPerformanceAnalysis-GoodwillSanAntonio/Goodwill-PricingPerformancePresentation' }
-    ]
-  },
+  // Shown in this order on the All tab; each tab keeps the same relative order.
   {
     category: 'data',
     title: 'Food Safety Analysis, Business Analytics Competition 2023',
@@ -45,6 +30,37 @@ const PROJECTS = [
     ]
   },
   {
+    category: 'swe',
+    title: 'A YOLO Model for Car License Plates Detection and Recognition',
+    label: 'Published paper, ICTIS 2025',
+    image: './assets/images/license-plate-project.jpg',
+    summary: 'YOLO license plate detection across datasets from China, Brazil, and Taiwan.',
+    context: 'Most license plate detection studies train and test on plates from a single country, even though large datasets exist for many regions. I wanted to see how well YOLO models handle plates from different places, and whether mixing regions helps or hurts.',
+    approach: 'With Eva Tuba and Milan Tuba, I trained YOLOv8 models on three datasets (CCPD from China, UFPR-ALPR from Brazil, and AOLP from Taiwan) and on a combined dataset covering all three, then compared them on precision, mAP50, and mAP50-95. I presented the work at ICTIS 2025.',
+    outcome: 'All four models reached a test mAP50 above 0.98, with the CCPD and AOLP models at 0.995. Scores at stricter IoU thresholds (mAP50-95 between 0.60 and 0.73) showed that tighter bounding boxes are the main area for improvement. Published by Springer in Smart Innovation, Systems and Technologies, vol. 126.',
+    tools: ['Python', 'YOLOv8', 'Ultralytics', 'Computer vision', 'Jupyter'],
+    links: [
+      { label: 'Read the paper', url: 'https://link.springer.com/chapter/10.1007/978-981-95-1361-1_50' },
+      { label: 'Google Scholar', url: 'https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xRUDogkAAAAJ&citation_for_view=xRUDogkAAAAJ:9yKSN-GCB0IC' },
+      { label: 'View code on GitHub', url: 'https://github.com/nhngoc02/license_plate_detection' }
+    ]
+  },
+  {
+    category: 'data',
+    title: 'Pricing Performance Analysis for Goodwill San Antonio',
+    label: 'Consulting project',
+    date: 'Feb – May 2024',
+    image: './assets/images/goodwill-project.jpg',
+    summary: 'Pricing performance and operations analysis for 28 Goodwill San Antonio stores.',
+    context: 'Goodwill San Antonio wanted to understand how well its pricing strategies were working across its 28 stores.',
+    approach: 'I defined 3 performance metrics (pricing variance, pricing efficiency, and total revenue) and evaluated them against 2.5 million historical data points, then built an interactive Tableau dashboard so store managers and associates could explore the results.',
+    outcome: 'Delivered consulting reports and the dashboard to Goodwill managers, giving them a shared way to compare pricing performance across stores.',
+    tools: ['Tableau', 'Data analysis', 'Consulting'],
+    links: [
+      { label: 'View Tableau dashboard', url: 'https://public.tableau.com/app/profile/ngoc.nguyen5931/viz/PricingPerformanceAnalysis-GoodwillSanAntonio/Goodwill-PricingPerformancePresentation' }
+    ]
+  },
+  {
     category: 'data',
     title: 'Dell Supply Chain Analytics',
     label: 'Case study',
@@ -57,6 +73,21 @@ const PROJECTS = [
     tools: ['R', 'R Shiny', 'Predictive modeling'],
     links: [
       { label: 'View on GitHub', url: 'https://github.com/nhngoc02/Dell_MWD' }
+    ]
+  },
+  {
+    category: 'swe',
+    title: 'Kennel Link: Kennel Web Portal',
+    label: 'Team software engineering project',
+    date: '2024',
+    image: './assets/images/kennel-link-project.jpg',
+    summary: 'Full-stack web portal for a kennel business.',
+    context: 'A web portal for a kennel business, built as a team software engineering project.',
+    approach: 'Our team built the app with Node.js and Express on the backend, EJS, HTML, and CSS on the frontend, and a MongoDB database, with Jest tests. We worked through GitHub issues and pull requests.',
+    outcome: 'A working web portal, built collaboratively through GitHub issues, branches, and pull requests.',
+    tools: ['Node.js', 'Express', 'MongoDB', 'EJS', 'Jest'],
+    links: [
+      { label: 'View on GitHub', url: 'https://github.com/nhngoc02/KennelProject_SWE' }
     ]
   },
   {
@@ -85,6 +116,20 @@ const PROJECTS = [
     tools: ['R', 'R Markdown', 'Regression', 'Hypothesis testing'],
     links: [
       { label: 'View on GitHub', url: 'https://github.com/nhngoc02/credit-card' }
+    ]
+  },
+  {
+    category: 'swe',
+    title: 'Scala Space Game',
+    label: 'Course project, CS2',
+    image: './assets/images/space-game-project.jpg',
+    summary: 'A Galaga-style space shooter written in Scala.',
+    context: 'Final project for Trinity University\'s CS2 course.',
+    approach: 'I built the game with object-oriented Scala: separate classes for the player, enemies, enemy swarms, bullets, and sprites, plus a small 2D vector class for movement.',
+    outcome: 'A playable game where the player moves in four directions and shoots waves of aliens. A recording is on the GitHub page.',
+    tools: ['Scala', 'Object-oriented design'],
+    links: [
+      { label: 'View on GitHub', url: 'https://github.com/nhngoc02/scala-space-game' }
     ]
   },
   {
@@ -142,53 +187,6 @@ const PROJECTS = [
     tools: ['Excel'],
     links: [
       { label: 'Open workbook', url: 'https://trinity0-my.sharepoint.com/:x:/r/personal/nnguyen5_trinity_edu/Documents/AdventureWorks_Dashboard.xlsx?d=wa0bac37c38024072aecab20c3be61bae&csf=1&web=1&e=Twq9BH' }
-    ]
-  },
-
-  // ---------- Software Engineering ----------
-  {
-    category: 'swe',
-    title: 'Kennel Link: Kennel Web Portal',
-    label: 'Team software engineering project',
-    date: '2024',
-    image: './assets/images/kennel-link-project.jpg',
-    summary: 'Full-stack web portal for a kennel business.',
-    context: 'A web portal for a kennel business, built as a team software engineering project.',
-    approach: 'Our team built the app with Node.js and Express on the backend, EJS, HTML, and CSS on the frontend, and a MongoDB database, with Jest tests. We worked through GitHub issues and pull requests.',
-    outcome: 'A working web portal, built collaboratively through GitHub issues, branches, and pull requests.',
-    tools: ['Node.js', 'Express', 'MongoDB', 'EJS', 'Jest'],
-    links: [
-      { label: 'View on GitHub', url: 'https://github.com/nhngoc02/KennelProject_SWE' }
-    ]
-  },
-  {
-    category: 'swe',
-    title: 'A YOLO Model for Car License Plates Detection and Recognition',
-    label: 'Published paper, ICTIS 2025',
-    image: './assets/images/license-plate-project.jpg',
-    summary: 'YOLO license plate detection across datasets from China, Brazil, and Taiwan.',
-    context: 'Most license plate detection studies train and test on plates from a single country, even though large datasets exist for many regions. I wanted to see how well YOLO models handle plates from different places, and whether mixing regions helps or hurts.',
-    approach: 'With Eva Tuba and Milan Tuba, I trained YOLOv8 models on three datasets (CCPD from China, UFPR-ALPR from Brazil, and AOLP from Taiwan) and on a combined dataset covering all three, then compared them on precision, mAP50, and mAP50-95. I presented the work at ICTIS 2025.',
-    outcome: 'All four models reached a test mAP50 above 0.98, with the CCPD and AOLP models at 0.995. Scores at stricter IoU thresholds (mAP50-95 between 0.60 and 0.73) showed that tighter bounding boxes are the main area for improvement. Published by Springer in Smart Innovation, Systems and Technologies, vol. 126.',
-    tools: ['Python', 'YOLOv8', 'Ultralytics', 'Computer vision', 'Jupyter'],
-    links: [
-      { label: 'Read the paper', url: 'https://link.springer.com/chapter/10.1007/978-981-95-1361-1_50' },
-      { label: 'Google Scholar', url: 'https://scholar.google.com/citations?view_op=view_citation&hl=en&user=xRUDogkAAAAJ&citation_for_view=xRUDogkAAAAJ:9yKSN-GCB0IC' },
-      { label: 'View code on GitHub', url: 'https://github.com/nhngoc02/license_plate_detection' }
-    ]
-  },
-  {
-    category: 'swe',
-    title: 'Scala Space Game',
-    label: 'Course project, CS2',
-    image: './assets/images/space-game-project.jpg',
-    summary: 'A Galaga-style space shooter written in Scala.',
-    context: 'Final project for Trinity University\'s CS2 course.',
-    approach: 'I built the game with object-oriented Scala: separate classes for the player, enemies, enemy swarms, bullets, and sprites, plus a small 2D vector class for movement.',
-    outcome: 'A playable game where the player moves in four directions and shoots waves of aliens. A recording is on the GitHub page.',
-    tools: ['Scala', 'Object-oriented design'],
-    links: [
-      { label: 'View on GitHub', url: 'https://github.com/nhngoc02/scala-space-game' }
     ]
   }
 ];
