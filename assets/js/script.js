@@ -1,159 +1,122 @@
 'use strict';
 
+// ---------- Page tabs (About / Resume / Portfolio / Activities) ----------
 
+const pageLinks = document.querySelectorAll('[data-page-link]');
+const pages = document.querySelectorAll('[data-page]');
 
-// element toggle function
-const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
+function showPage(name, updateHash = true) {
+  if (![...pages].some(page => page.dataset.page === name)) name = 'about';
 
-
-
-// sidebar variables
-const sidebar = document.querySelector("[data-sidebar]");
-const sidebarBtn = document.querySelector("[data-sidebar-btn]");
-
-// sidebar toggle functionality for mobile
-sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
-
-
-
-// testimonials variables
-const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
-const modalContainer = document.querySelector("[data-modal-container]");
-const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
-const overlay = document.querySelector("[data-overlay]");
-
-// modal variable
-const modalImg = document.querySelector("[data-modal-img]");
-const modalTitle = document.querySelector("[data-modal-title]");
-const modalText = document.querySelector("[data-modal-text]");
-
-// modal toggle function
-const testimonialsModalFunc = function () {
-  modalContainer.classList.toggle("active");
-  overlay.classList.toggle("active");
-}
-
-// add click event to all modal items
-for (let i = 0; i < testimonialsItem.length; i++) {
-
-  testimonialsItem[i].addEventListener("click", function () {
-
-    modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
-    modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
-    modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
-    modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
-
-    testimonialsModalFunc();
-
+  pages.forEach(page => page.classList.toggle('active', page.dataset.page === name));
+  pageLinks.forEach(link => {
+    const isActive = link.dataset.pageLink === name;
+    link.classList.toggle('active', isActive);
+    link.setAttribute('aria-selected', isActive);
   });
 
+  if (updateHash) history.replaceState(null, '', '#' + name);
 }
 
-// add click event to modal close button
-modalCloseBtn.addEventListener("click", testimonialsModalFunc);
-overlay.addEventListener("click", testimonialsModalFunc);
+pageLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    showPage(link.dataset.pageLink);
+    window.scrollTo({ top: 0 });
+  });
+});
+
+showPage(location.hash.slice(1) || 'about', false);
+window.addEventListener('hashchange', () => showPage(location.hash.slice(1), false));
 
 
+// ---------- Portfolio: category tabs and project cards ----------
 
-// custom select variables
-const select = document.querySelector("[data-select]");
-const selectItems = document.querySelectorAll("[data-select-item]");
-const selectValue = document.querySelector("[data-selecct-value]");
-const filterBtn = document.querySelectorAll("[data-filter-btn]");
+const grid = document.querySelector('[data-project-grid]');
+const segments = document.querySelectorAll('[data-filter]');
 
-select.addEventListener("click", function () { elementToggleFunc(this); });
+function escapeHtml(text) {
+  const div = document.createElement('div');
+  div.textContent = text;
+  return div.innerHTML;
+}
 
-// add event in all select items
-for (let i = 0; i < selectItems.length; i++) {
-  selectItems[i].addEventListener("click", function () {
+function initials(title) {
+  return title.split(/\s+/).filter(w => /^[A-Za-z]/.test(w)).slice(0, 2).map(w => w[0]).join('').toUpperCase();
+}
 
-    let selectedValue = this.innerText.toLowerCase();
-    selectValue.innerText = this.innerText;
-    elementToggleFunc(select);
-    filterFunc(selectedValue);
+function renderProjects(category) {
+  grid.innerHTML = '';
 
+  PROJECTS.forEach((project, index) => {
+    if (project.category !== category) return;
+
+    const thumb = project.image
+      ? `<img src="${project.image}" alt="" loading="lazy">`
+      : `<span class="thumb-placeholder" aria-hidden="true">${initials(project.title)}</span>`;
+
+    const item = document.createElement('li');
+    item.innerHTML = `
+      <button class="project-card" data-project-index="${index}">
+        <span class="project-thumb">${thumb}</span>
+        <span class="project-meta">${escapeHtml(project.label)}</span>
+        <span class="project-title">${escapeHtml(project.title)}</span>
+        <span class="project-summary">${escapeHtml(project.summary)}</span>
+      </button>`;
+    grid.appendChild(item);
   });
 }
 
-// filter variables
-const filterItems = document.querySelectorAll("[data-filter-item]");
-
-const filterFunc = function (selectedValue) {
-
-  for (let i = 0; i < filterItems.length; i++) {
-
-    if (selectedValue === "all") {
-      filterItems[i].classList.add("active");
-    } else if (selectedValue === filterItems[i].dataset.category) {
-      filterItems[i].classList.add("active");
-    } else {
-      filterItems[i].classList.remove("active");
-    }
-
-  }
-
-}
-
-// add event in all filter button items for large screen
-let lastClickedBtn = filterBtn[0];
-
-for (let i = 0; i < filterBtn.length; i++) {
-
-  filterBtn[i].addEventListener("click", function () {
-
-    let selectedValue = this.innerText.toLowerCase();
-    selectValue.innerText = this.innerText;
-    filterFunc(selectedValue);
-
-    lastClickedBtn.classList.remove("active");
-    this.classList.add("active");
-    lastClickedBtn = this;
-
+segments.forEach(segment => {
+  segment.addEventListener('click', () => {
+    segments.forEach(s => {
+      const isActive = s === segment;
+      s.classList.toggle('active', isActive);
+      s.setAttribute('aria-selected', isActive);
+    });
+    renderProjects(segment.dataset.filter);
   });
+});
 
+renderProjects('data');
+
+
+// ---------- Project details popup ----------
+
+const dialog = document.querySelector('[data-project-dialog]');
+const dialogBody = document.querySelector('[data-dialog-body]');
+
+function openProject(project) {
+  const meta = [project.label, project.date].filter(Boolean).map(escapeHtml).join(' · ');
+  const tools = project.tools.map(tool => `<li>${escapeHtml(tool)}</li>`).join('');
+  const links = project.links.map((link, i) =>
+    `<a class="btn ${i === 0 ? '' : 'btn-secondary'}" href="${link.url}" target="_blank" rel="noopener">${escapeHtml(link.label)} ↗</a>`
+  ).join('');
+
+  dialogBody.innerHTML = `
+    ${project.image ? `<img class="dialog-image" src="${project.image}" alt="">` : ''}
+    <p class="project-meta">${meta}</p>
+    <h3 id="dialog-title" class="dialog-title">${escapeHtml(project.title)}</h3>
+    <h4>Context</h4>
+    <p>${escapeHtml(project.context)}</p>
+    <h4>What I did</h4>
+    <p>${escapeHtml(project.approach)}</p>
+    <h4>Outcome</h4>
+    <p>${escapeHtml(project.outcome)}</p>
+    <ul class="tags">${tools}</ul>
+    <div class="dialog-actions">${links}</div>`;
+
+  dialog.showModal();
+  dialog.scrollTop = 0;
 }
 
+grid.addEventListener('click', event => {
+  const card = event.target.closest('[data-project-index]');
+  if (card) openProject(PROJECTS[card.dataset.projectIndex]);
+});
 
+document.querySelector('[data-dialog-close]').addEventListener('click', () => dialog.close());
 
-// contact form variables
-const form = document.querySelector("[data-form]");
-const formInputs = document.querySelectorAll("[data-form-input]");
-const formBtn = document.querySelector("[data-form-btn]");
-
-// add event to all form input field
-for (let i = 0; i < formInputs.length; i++) {
-  formInputs[i].addEventListener("input", function () {
-
-    // check form validation
-    if (form.checkValidity()) {
-      formBtn.removeAttribute("disabled");
-    } else {
-      formBtn.setAttribute("disabled", "");
-    }
-
-  });
-}
-
-
-
-// page navigation variables
-const navigationLinks = document.querySelectorAll("[data-nav-link]");
-const pages = document.querySelectorAll("[data-page]");
-
-// add event to all nav link
-for (let i = 0; i < navigationLinks.length; i++) {
-  navigationLinks[i].addEventListener("click", function () {
-
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-        window.scrollTo(0, 0);
-      } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
-      }
-    }
-
-  });
-}
+// Close when clicking the dimmed backdrop outside the popup
+dialog.addEventListener('click', event => {
+  if (event.target === dialog) dialog.close();
+});

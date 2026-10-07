@@ -3,1245 +3,349 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nora Nguyen - Personal Portfolio</title>
+  <title>Nora Nguyen | Project Manager</title>
+  <meta name="description" content="Nora (Ngoc) Nguyen is a Project Manager in Austin, TX working on workflow automation, business intelligence, and supply-chain operations. Portfolio of data analysis and software engineering projects.">
 
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="icon" href="./assets/images/logo.ico" type="image/x-icon">
 
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
 
-  <!--
-    - #MAIN
-  -->
+  <div class="layout">
 
-  <main>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <img class="avatar" src="./assets/images/profile-pic.jpg" alt="Portrait of Nora Nguyen" width="96" height="96">
+      <h1 class="name">Nora Nguyen</h1>
+      <p class="role">Project Manager</p>
 
-    <!--
-      - #SIDEBAR
-    -->
+      <ul class="contact-list">
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z" /><path d="m4 7 8 6 8-6" /></svg>
+          <a href="mailto:nhngoc02@gmail.com">nhngoc02@gmail.com</a>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6-5.5-6-10a6 6 0 0 1 12 0c0 4.5-6 10-6 10z" /><circle cx="12" cy="11" r="2" /></svg>
+          <span>Austin, TX</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2" /><path d="M8 10v6M8 7.5v.01M12 16v-6M12 12.5c0-1.5 1-2.5 2.2-2.5S16 11 16 12.5V16" /></svg>
+          <a href="https://www.linkedin.com/in/nhngoc02/" target="_blank" rel="noopener">LinkedIn</a>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1.3-4-2-6-2.5M15 21v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12 12 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21" /></svg>
+          <a href="https://github.com/nhngoc02" target="_blank" rel="noopener">GitHub</a>
+        </li>
+      </ul>
 
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/profile-pic.jpg" alt="Nora Nguyen" width="80" style="border: 1px solid hsla(0, 0%, 84%, 0.7);">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Nora Nguyen">Nora Nguyen</h1>
-
-          <p class="title">Project Manager</p>
-        </div>
-        
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-              <a href="mailto:nhngoc02@gmail.com" class="contact-link">nhngoc02@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+1 (210) 454 1109" class="contact-link">(210) 454-1109</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Austin, TX</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/nhngoc02/" class="social-link">
-              <!-- <a href=""><ion-icon name="logo-linkedin"></ion-icon></a> -->
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
+      <a class="btn" href="./assets/NoraNguyen_Resume.pdf" target="_blank" rel="noopener">Download resume (PDF)</a>
     </aside>
 
+    <!-- Main content -->
+    <main class="content">
 
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Activities</button>
-          </li>
-
-        </ul>
-
+      <nav class="tabs" role="tablist" aria-label="Sections">
+        <button class="tab active" role="tab" aria-selected="true" data-page-link="about">About</button>
+        <button class="tab" role="tab" aria-selected="false" data-page-link="resume">Resume</button>
+        <button class="tab" role="tab" aria-selected="false" data-page-link="portfolio">Portfolio</button>
+        <button class="tab" role="tab" aria-selected="false" data-page-link="activities">Activities</button>
       </nav>
-      <!-- <nav class="navbar">
-        <ul class="navbar-list">
-          <li class="navbar-item">
-            <a href="/about/" class="navbar-link active">About</a>
-          </li>
-          <li class="navbar-item">
-            <a href="/resume/" class="navbar-link">Resume</a>
-          </li>
-          <li class="navbar-item">
-            <a href="/portfolio/" class="navbar-link">Portfolio</a>
-          </li>
-          <li class="navbar-item">
-            <a href="/activities/" class="navbar-link">Activities</a>
-          </li>
-          <li class="navbar-item">
-            <a href="/contact/" class="navbar-link">Contact</a>
-          </li>
-        </ul>
-      </nav> -->
-      
 
+      <!-- About -->
+      <section class="page active" id="about" data-page="about">
+        <h2 class="page-title">About me</h2>
 
-
-
-
-      <!--
-        - #ABOUT
-      -->
-      
-      <article class="about  active" data-page="about">
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <h2 id="career-objectives">Career Objectives</h2>
-          <p>
-          Hi there, I’m Nora (Ngoc) Nguyen, a Project Manager at Applied Materials, a leading semiconductor manufacturing company. I specialize in <strong>workflow automation</strong>, <strong>business intelligence</strong>, and <strong>supply-chain process optimization</strong>. In my current role within Global Services, I lead high‑impact programs that streamline reverse value chain operations, modernize legacy workflows, and strengthen decision‑making across the organization.
-          </p>
-          <p>
-          My work centers on turning ambiguous business needs into scalable technical and analytics solutions. Whether I’m architecting multi‑team operational workflows, designing dashboards that improve visibility for leaders, or driving automation initiatives that eliminate bottlenecks and reduce cycle time, I focus on building systems that help teams work smarter and operate with confidence.
+        <p>
+          Hi, I'm Nora (Ngoc) Nguyen, a Project Manager at Applied Materials, a semiconductor equipment and services
+          company. I work on <strong>workflow automation</strong>, <strong>business intelligence</strong>, and
+          <strong>supply-chain process improvement</strong>. In Global Services, I run programs that streamline
+          reverse value chain operations, modernize legacy workflows, and give leaders better information to decide with.
         </p>
-          <p>
-          Before stepping into this role, I built a strong foundation in <strong>data analytics</strong>, <strong>machine learning</strong>, and <strong>software development</strong> within the automative, SaaS and biomedical domains through experiences at Volvo Group, CDK Global, and Trinity University’s Neuroscience Lab. This background has shaped how I approach product and process improvement today, by combining analytical rigor, operational depth, and user‑centric design to create solutions that are sustainable, thoughtful, and help teams work smarter.
-          </p>
-            <div class="image-container">
-              <div class="image-wrapper">
-                <img src="./assets/images/aps-conference.JPG" width="350" class="align-left" />
-                <em class="image-description">APS Conference 2023, Las Vegas, NV</em>
-              </div>
-              <div class="image-wrapper">
-                <img src="./assets/images/bac-tu-team.png"  width="350" class="align-right" />
-                <em class="image-description">Business Analytics Competition & Conference 2023 at Manhattan College, New York, NY</em>
-              </div>
-            </div>
-          <br>
-          <div class="image-container">
-            <div class="image-wrapper">
-              <img src="./assets/images/volvo-intern.jpg" width="350" class="align-left" />
-              <em class="image-description">Volvo office 2024, Greensboro, NC</em>
-            </div>
-            <div class="image-wrapper">
-              <img src="./assets/images/cdk-intern.png"  width="350" class="align-right" />
-              <em class="image-description">CDK Global office 2023, Austin, TX</em>
-            </div>
-          </div>
-        <br>
+        <p>
+          Most of my work starts with an unclear business need and ends with something a team can rely on: a
+          multi-team workflow, a dashboard that answers the questions leaders actually ask, or an automation that
+          removes a bottleneck.
+        </p>
+        <p>
+          Before this role, I built my foundation in <strong>data analytics</strong>, <strong>machine learning</strong>,
+          and <strong>software development</strong> across the automotive, SaaS, and biomedical fields at Volvo Group,
+          CDK Global, and Trinity University's Neuroscience Lab. That background shapes how I approach process
+          improvement today: analytical rigor, operational detail, and design that starts from the people who will use it.
+        </p>
 
-          <p>More details about my work and projects can be found in the <strong>Resume</strong> & <strong>Portfolio</strong> tabs.</p>
-          <!-- <p>More details about my projects can be found below:</p>
-          <p class="text-center"><a href="https://nhngoc02.github.io/portfolio/" class="btn btn--info">View My Portfolio</a></p> -->
-          
-          <h2 id="hobbies">Hobbies</h2>
-          <h3 id="photography">Photography</h3>
-          <p>I love experimenting with my camera when I’m traveling or out in nature. I’m far from a professional. I do it purely for fun. But capturing landscapes, small moments, and the feeling of a place helps me preserve memories from my trips.</p>
-          <div class="image-container">
-            <div class="image-wrapper">
-              <img src="./assets/images/photo-1.JPG" width="350" class="align-left" />
-              <em class="image-description">Terrace Fields, Sapa, Vietnam</em>
-            </div>
-            <div class="image-wrapper">
-              <img src="./assets/images/photo-2.JPG" width="350" class="align-right" />
-              <em class="image-description">Summer drizzle, Sapa, Vietnam</em>
-            </div>
-          </div>
-      
-        </section>
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-          </section>
-
+        <div class="gallery gallery-2">
+          <figure>
+            <img src="./assets/images/aps-conference.jpg" alt="Nora presenting at the APS Conference" loading="lazy">
+            <figcaption>APS Conference 2023, Las Vegas, NV</figcaption>
+          </figure>
+          <figure>
+            <img src="./assets/images/bac-tu-team.jpg" alt="Trinity University team at the Business Analytics Competition" loading="lazy">
+            <figcaption>Business Analytics Competition 2023, Manhattan College, New York, NY</figcaption>
+          </figure>
+          <figure>
+            <img src="./assets/images/volvo-intern.jpg" alt="Nora at the Volvo office" loading="lazy">
+            <figcaption>Volvo Group, Greensboro, NC, 2024</figcaption>
+          </figure>
+          <figure>
+            <img src="./assets/images/cdk-intern.jpg" alt="Nora at the CDK Global office" loading="lazy">
+            <figcaption>CDK Global, Austin, TX, 2023</figcaption>
+          </figure>
         </div>
-        <p class="image-description">Website last update: Jan 07, 2025<p>
-      </article>
 
-      <!--
-        - #RESUMEs
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <p  class="about-text" >The PDF version of this resume can be accessed <a href="https://drive.google.com/file/d/1y2EzxcifDAGyJ_fnEIFgAO1Py2e1vTe6/view?usp=sharing"><strong>here</strong></a>.</p>
-        <br>
-
+        <h3 class="section-title">Outside of work</h3>
+        <p>
+          I like experimenting with my camera when I'm traveling or out in nature. I'm far from a professional and do
+          it purely for fun, but capturing landscapes and small moments helps me hold on to the feeling of a place.
+        </p>
+        <div class="gallery gallery-2">
+          <figure>
+            <img src="./assets/images/photo-1.jpg" alt="Terraced rice fields in Sapa" loading="lazy">
+            <figcaption>Terrace fields, Sapa, Vietnam</figcaption>
+          </figure>
+          <figure>
+            <img src="./assets/images/photo-2.jpg" alt="Summer drizzle over the hills of Sapa" loading="lazy">
+            <figcaption>Summer drizzle, Sapa, Vietnam</figcaption>
+          </figure>
+        </div>
       </section>
 
+      <!-- Resume -->
+      <section class="page" id="resume" data-page="resume">
+        <h2 class="page-title">Resume</h2>
+        <p class="muted">A one-page version is available as a <a href="./assets/NoraNguyen_Resume.pdf" target="_blank" rel="noopener">PDF</a>.</p>
 
+        <h3 class="section-title">Summary</h3>
+        <p>
+          Project Manager leading workflow automation, business intelligence, and supply-chain operational improvements
+          across global services operations. Translates ambiguous business needs into scalable technical and analytics
+          solutions, and delivers executive-ready insights through data visualization and storytelling. Uses LLM-powered
+          automation, AI-assisted coding, and predictive modeling to improve decision-making.
+        </p>
 
+        <h3 class="section-title">Skills</h3>
+        <dl class="skills">
+          <dt>Project management</dt>
+          <dd>Workflow automation, cross-functional leadership, stakeholder management, PRDs, roadmap planning, risk assessment, KPI design and tracking, Agile/Scrum, ROI analysis, systems and design thinking</dd>
+          <dt>Data analytics</dt>
+          <dd>SQL, Tableau, Power BI, Azure, Databricks, advanced Excel (Macros/VBA), predictive and prescriptive modeling, statistical analysis, dashboard development, data storytelling</dd>
+          <dt>Tools &amp; automation</dt>
+          <dd>Python, R, Git, Spark, Smartsheet, Power Automate, REST APIs, ETL pipelines, AI agent development (built on Claude)</dd>
+          <dt>Certifications</dt>
+          <dd>MOS Excel Expert, Intermediate SQL, NASBA Ethical Leadership</dd>
+        </dl>
 
-    </section>
+        <h3 class="section-title">Experience</h3>
 
-    <section class="timeline">
-
-      <div class="title-wrapper">
-        <div class="icon-box">
-          <ion-icon name="book-outline"></ion-icon>
-        </div>
-
-        <h3 class="h3">SUMMARY</h3>
-      </div>
-
-      <ol class="timeline-list">
-
-        <li class="timeline-item">
-
+        <div class="entry">
+          <div class="entry-head">
+            <h4>Project Manager · Applied Materials</h4>
+            <span class="date">Jun 2025 – Present</span>
+          </div>
+          <p class="entry-sub">Austin, TX</p>
           <ul>
-            <li class="timeline-text">Project Manager leading high-impact workflow automation, business intelligence, and supply‑chain operational improvements across global services operations. Recognized for translating ambiguous business needs into technical solutions and delivering executive‑ready insights through advanced analytics, data visualization and storytelling. Leverages emerging technologies, including LLM‑powered automation, AI-assisted coding and predictive modeling, to enhance decision-making.
-            </li>
+            <li>Own end-to-end design, launch, and operation of a portfolio of repair-enablement programs: defining requirements, building automation, specifying dashboards, aligning cross-functional stakeholders, and training operators. Launched 3 standardized programs in FY26 with a 4th in design, each handed off to a dedicated owner after stabilization.</li>
+            <li>Launched a supplier capability qualification program to 43 engineering and sourcing stakeholders, now underpinning approximately $70M of repair enablement annually.</li>
+            <li>Built a cost-exposure model that identified $2.6M in annualized hold-cost risk across 42 parts, added a cost-justification requirement to the intake process, and turned the one-time analysis into a recurring automated financial control with quarterly review.</li>
+            <li>Directed a repair-inquiry intake and tracking workflow handling 190+ inquiries (113+ closed) and a stakeholder communication process reaching 220+ users.</li>
+            <li>Own 9 dashboards end-to-end (Tableau, custom interactive HTML, and Smartsheet) used by 53+ users across 7 teams, and delivered continuous-improvement updates to 5+ additional dashboards.</li>
+            <li>Migrated a legacy automation workflow onto AI agents built on Claude, creating automated routines that generate escalation reporting, refresh dashboards, and draft recurring status updates, reducing manual reporting effort.</li>
           </ul>
-
-        </li>
-
-      </ol>
-
-    </section>
-
-
-      <section class="timeline">
-
-        <div class="title-wrapper">
-          <div class="icon-box">
-            <ion-icon name="book-outline"></ion-icon>
-          </div>
-
-          <h3 class="h3">SKILLS</h3>
-
         </div>
 
-        <ol class="timeline-list">
+        <div class="entry">
+          <div class="entry-head">
+            <h4>Data Analytics &amp; Automation Intern · Volvo Group</h4>
+            <span class="date">Jan 2024 – May 2025</span>
+          </div>
+          <p class="entry-sub">Greensboro, NC</p>
+          <ul>
+            <li>Deployed predictive models (7% MAPE, 97% R²) for used-asset valuation, helping sales leaders make resale and end-of-life decisions; built with time-series Prophet and Extra Trees and served through the Databricks API.</li>
+            <li>Built an LLM-powered automation process (ChatGPT and Gemini via Azure OpenAI) that summarizes month-end reporting and scores sentiment across 52 markets.</li>
+            <li>Co-led development of 2 Power Apps data management tools integrated with Power BI for reporting on $9B portfolios, and renovated AML Power BI dashboards covering 11,000+ transactions.</li>
+            <li>Standardized global service location data for 50+ country markets with Python preprocessing and scheduled ETL on Azure Databricks and Blob Storage, saving 120+ working hours annually.</li>
+            <li>Built an automation pipeline with Python, Databricks, and Power Automate that generates and sends invoice reminders from customer, invoice, and contract data, reducing unpaid invoices and manual work.</li>
+          </ul>
+        </div>
 
-          <li class="timeline-item">
-            <p class="timeline-text">
-              <strong>Project Management:</strong> Workflow automation, Cross-functional leadership, Stakeholder management, Product requirements (PRDs), Roadmap planning, Risk assessment, KPI design & tracking, Agile/Scrum, ROI analysis, Systems & Design thinking.
-            </p>
-          </li>
+        <div class="entry">
+          <div class="entry-head">
+            <h4>Software Engineer &amp; Analytics Intern · CDK Global</h4>
+            <span class="date">Jun – Dec 2023</span>
+          </div>
+          <p class="entry-sub">Austin, TX</p>
+          <ul>
+            <li>Diagnosed a system-wide configuration issue affecting 6,000 customers during M&amp;A transitions by tracing data mapping across the dealer management and enterprise information systems.</li>
+            <li>Analyzed API usage patterns with SQL, Snowflake, Excel, and Tableau to guide API scaling and improve data-retrieval performance.</li>
+            <li>Contributed to 4 REST APIs (Java Spring Boot and OpenAPI specifications) serving 27,000 stakeholders across repair, inventory, and accounting systems.</li>
+            <li>Automated OpenAPI documentation with a custom program, cutting documentation time by 80%.</li>
+          </ul>
+        </div>
 
-          <li class="timeline-item">
-            <p class="timeline-text">
-              <strong>Data Analytics:</strong> SQL, Tableau, Power BI, Azure, Databricks, advanced Microsoft Excel (Macros/VBA), Predictive & Prescriptive modeling, Statistical analysis, Dashboard development, Data storytelling.
-              SQL, Tableau, Power BI, Azure Databricks, Snowflake, Oracle Database, Jupyter Notebook, Pyspark, Excel VBA & Macros, Alteryx.
-            </p>
+        <div class="entry">
+          <div class="entry-head">
+            <h4>Data Science Student Researcher · Trinity Neuroscience Lab</h4>
+            <span class="date">Sep 2022 – Dec 2023</span>
+          </div>
+          <p class="entry-sub">San Antonio, TX</p>
+          <ul>
+            <li>Built GPU-accelerated clustering pipelines in Python and R for 178M+ antibody sequences to support antibody discovery research.</li>
+            <li>Applied machine learning (NMFk, K-Means) to quantify molecular clustering behavior linked to neurodegenerative disease.</li>
+            <li>Published 2 peer-reviewed papers (<a href="https://www.mdpi.com/1420-3049/28/10/4191" target="_blank" rel="noopener">Molecules, 2023</a>; <a href="https://www.sciencedirect.com/science/article/pii/S0301462223000443" target="_blank" rel="noopener">Biophysical Chemistry, 2023</a>) and presented at the APS March Meeting 2023.</li>
+          </ul>
+        </div>
 
-          </li>
+        <h3 class="section-title">Education</h3>
+        <div class="entry">
+          <div class="entry-head">
+            <h4>Trinity University</h4>
+            <span class="date">Aug 2021 – May 2025</span>
+          </div>
+          <p class="entry-sub">San Antonio, TX</p>
+          <ul>
+            <li>BS, Business Analytics &amp; Technology (Data Science concentration) and BA, Computer Science. GPA 3.98</li>
+            <li>Class Honors Scholarship (top 15 students in the class of 2025); Beta Gamma Sigma (top 10% of the School of Business); Dell Honors Award in Business Analytics &amp; Technology; 3rd place, National Business Analytics Competition at Manhattan College, 2023</li>
+            <li>Coursework: Data Science, Database Systems, Big Data &amp; Machine Learning, Spreadsheet Modeling, Data Abstraction, Mathematics for Data Science, Information Systems, Statistics, Software Engineering, Consulting</li>
+          </ul>
+        </div>
 
-          <li class="timeline-item">
-            <p class="timeline-text">
-              <strong>Technical Tools & Automation:</strong> Python, R, Smartsheet, Power Automate, Power Apps, REST APIs, ETL pipelines, AI and Machine learning algorithms, Git, Spark, Database design, Jupyter Notebook, Pyspark.
-            </p>
-
-          </li>
-
-          <li class="timeline-item">
-            <p class="timeline-text">
-              <strong>Certifications:</strong> MOS Excel Expert, Intermediate SQL, NASBA Ethical Leadership, Python Analytics for Business Professionals.
-            </p>
-          </li>
-
-        </ol>
-
+        <h3 class="section-title">Leadership</h3>
+        <ul class="plain-list">
+          <li><span><strong>Video Podcast Program Manager</strong>, <a href="https://visemi.org/" target="_blank" rel="noopener">Visemi Foundation</a> (Vietnamese Professionals in Semiconductor), <a href="https://visemi.org/initiatives/visemi-chip-chat-podcast/" target="_blank" rel="noopener">Chip Chat podcast</a></span> <span class="date">Nov 2025 – Present</span></li>
+          <li><span><strong>Co-host</strong>, Applied Materials Women Professional Development Network</span> <span class="date">Jul 2025 – Present</span></li>
+          <li><span><strong>Vice President</strong>, Trinity University Data Analytics Club</span> <span class="date">Aug 2024 – 2025</span></li>
+          <li><span><strong>Vice President of Education</strong>, TWIST, Trinity Women in Science and Technology</span> <span class="date">Aug 2022 – May 2023</span></li>
+          <li><span><strong>Art &amp; Cultural Coordinator</strong>, Trinity Vietnamese Student Association</span></li>
+          <li><span><strong>Training Co-host</strong>, PISE, Project Incubator for Young Social Entrepreneurs</span> <span class="date">Apr – Aug 2021</span></li>
+        </ul>
       </section>
 
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">PROFESSIONAL EXPERIENCE</h3>
-          </div>
-
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Applied Materials | Austin, TX</h4>
-              <h5 class="timeline-item-subtitle">Project Manager</h5>
-
-              <span>June 2025 - Present</span>
-              <p class="timeline-text">
-                • Direct repair capability across 400+ vendors by automating questionnaire distribution, tracking and escalation workflows, driving 700+ part enablements, saving estimated 630+ hours annually, and enhancing visibility into vendor service coverage and repair cycles. 
-              </p>
-              <p class="timeline-text">
-                • Establish an organization-wide part disposition workflow within a $20M annual part retention cost portfolio, incorporating automation, cost-impact modeling and scrap decision logic, reducing turnaround time by 50% and minimizing incorrect scrapping risk.
-              </p>
-              <p class="timeline-text">
-                • Lead the part repair solution recommendation process for customer-impacting part failures, using Smartsheet, Power Automate, Tableau, and Excel. Facilitate weekly SME reviews to resolve exceptions or challenged cases. 
-              </p>
-              <p class="timeline-text">
-                • Report project performance metrics, user feedback, retention trends and new program introduction to 20+ leaders and 50+ team members to identify improvement strategies and scale best practices.
-              </p>
-              <p class="timeline-text">
-                • Design a workflow for part repairability reclassification, enabling Purchasing, Finance and Repair to process supplier-driven changes and associated reserve impact. Define user requirements, map logic, secure leadership alignment and train users.
-              </p>
-              <p class="timeline-text">
-                • Oversee development of 4 end-to-end operational workflows, 8+ dashboards used across 7 teams, and 10+ continuous improvement (CIP) initiatives focused on bottleneck elimination, modernization and process streamlining.
-              </p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Volvo Group | Greensboro, NC</h4>
-              <h5 class="timeline-item-subtitle">Data Analytics & Automation Intern</h5>
-
-              <span>May 2024 - May 2025</span>
-
-              <p class="timeline-text">
-                • Deployed predictive models (7% MAPE, 97% R2) for Volvo’s used asset valuation, empowering Sales leaders to make data-driven resale and end-of-life decisions; built using Time-series Prophet & Extreme Trees, hosted via Databricks REST APIs.
-              </p>
-              <p class="timeline-text">
-                • Enhanced AML and rental operations dashboards by adding new UI components and dynamic risk‑scoring logic, strengthening regulatory oversight and operational accuracy across 11,000+ financial‑services transactions under Volvo Finland Credit.
-              </p>
-              <p class="timeline-text">
-                • Co-led the development of 2 data management applications with Microsoft Power Apps, integrated with Power BI for real-time reporting of $9 billion portfolios. Migrated data from Excel to SQL Server databases, serving 10+ daily users.
-              </p>
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Volvo Financial Services | Greensboro, NC</h4>
-              <h5 class="timeline-item-subtitle">Data Automation & Engineer Intern</h5>
-
-              <span>January - May 2024</span>
-
-              <p class="timeline-text">
-                • Designed and implemented an automation pipeline using Python, Databricks, and Power Automate to modernize payment‑reminder operations; integrated data from customer, invoice, and contract systems and automated invoice‑PDF creation and distribution, reducing unpaid invoices and manual workload.
-              </p>
-              <p class="timeline-text">
-                • Standardized Volvo’s global service location data management for 50+ country markets by building 700+ lines of Python code for data preprocessing and transformation. Automated ETL scheduling on Azure Databricks and Azure Blobs Storage, saving 120+ working hours annually and improving data quality.
-              </p>
-              <p class="timeline-text">
-                • Refactored accounting KPI calculation logic (200+ lines of code) to support Oracle Hyperion Financial Management consolidation, increasing reporting efficiency for 400 legal entities by 20%.
-              </p>
-              <p class="timeline-text">
-                • Designed a migration pipeline to transition 2 enterprise databases from Volvo Data Lake to the Unified Data Platform using Azure Data Factory.
-              </p>
-              
-
-            </li>
-            
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">CDK Global | Austin, TX</h4>
-              <h5 class="timeline-item-subtitle">Software Engineer & Analytics Intern</h5>
-
-              <span>June - December 2023</span>
-              <p class="timeline-text">
-                • Diagnosed configuration‑driven failures across 6,000 customers by analyzing CDK Dealer Management System and Enterprise Information System data, resolving data mapping issues by M&A transition, and strengthening data accuracy and security.
-              </p>
-              <p class="timeline-text">
-                • Generated insights on API usage patterns using SQL, Snowflake, Excel, and Tableau to optimize API scaling strategies and improve data‑retrieval performance for end users.
-              </p>
-              <p class="timeline-text">
-                • Contributed to development of four REST APIs by implementing Java Spring Boot logic and writing OpenAPI specifications, enabling precise data access for 27,000 stakeholders across repair, inventory, and accounting systems.
-              </p>
-              <p class="timeline-text">
-                • Automated OpenAPI documentation through a custom program that reduced documentation time by 80%.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Trinity Neuroscience Lab</h4>
-              <h5 class="timeline-item-subtitle">Data Science Student Researcher</h5>
-
-              <span>September 2022 – December 2023</span>
-
-              <p class="timeline-text">
-                • Optimized the analysis of molecule’s clustering behaviors with machine learning algorithms, including NMFk and K-Means.
-              </p>
-              <p class="timeline-text">
-                • Analyzed large‑scale biomedical datasets using R Markdown to identify neurodegenerative disease factors. Published two peer‑reviewed publications and presented at the APS conference.
-              </p>
-              <p class="timeline-text">
-                • Developed Python pipelines to collect, preprocess, and cluster 9M+ antibody sequences, supporting immunotherapeuty drug discovery efforts.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title"> Trinity IT Services</h4>
-              <h5 class="timeline-item-subtitle">Instructional Support Student Assistant</h5>
-
-              <span>June 2022 – November 2022</span>
-
-              <p class="timeline-text">
-                •	Designed and developed training materials on instructional technology tools (100 technology articles, videos & digital guides, and 4 campus-wide technology campaigns) for Trinity University faculty, students, and staff.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">TECHNICAL PROJECTS</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title"><a href="https://public.tableau.com/app/profile/ngoc.nguyen5931/viz/PricingPerformanceAnalysis-GoodwillSanAntonio/Goodwill-PricingPerformancePresentation">Pricing analysis for Goodwill San Antonio</a></h4>
-
-              <span>February - May 2024</span>
-
-              <p class="timeline-text">
-                •	Established 3 performance metrics (pricing variance, pricing efficiency and total revenue) to evaluate pricing strategies for 28 Goodwill SA stores, leveraging 2,500,000 data points.
-              </p>
-              <p class="timeline-text">
-                •	Created an interactive Tableau dashboard to communicate the performance metrics with Goodwill’s managers and associates.
-              </p>
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title"><a href="https://www.trinity.edu/trinity-tuday/trinitys-team-places-third-business-analytics-competition">Comprehensive analysis on Food Safety in Sub-Saharan Africa and Central/Caribbean America</a> </h4>
-
-              <span>February - May 2023</span>
-
-              <p class="timeline-text">
-                •	Represented Trinity University in a team of 4 students to participate in the 2023 Business Analytics Competition at Manhattan College and achieved the <strong>third-place award</strong> out of 24 teams across the US.
-              </p>
-              <p class="timeline-text">
-                •	Conducted in-depth research and analysis on and proposed customized improvement strategies for Food Safety in Sub-Saharan Africa and Central/Caribbean America countries.
-              </p>
-              <p class="timeline-text">
-                •	Skills: Data Analysis (R, Python & Tableau); Machine Learning (K-Means clustering, LSTM neural network, Random Forest, and other tree methods); Public speaking and problem-solving.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title"><a href="https://drive.google.com/drive/folders/1JO3Kls3vZ87QRu7pp8eV9RTn3nJ2xRDA">KPIM Order & Delivery - Power BI dashboard</a></h4>
-
-              <span>July 2023</span>
-
-              <p class="timeline-text">
-                •	Generated an interactive Power BI report on 12-month data of KPIM order fulfillment status and trends by implementing Bookmarks for seamless navigation between different views, Buttons for data filtering, and DAX for field calculations.	
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">EDUCATION</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title"><i>Trinity University, San Antonio, TX</i></h4>
-
-              <span>2021 - 2025</span>
-
-              <ul>
-                <li class="timeline-text"><strong>Bachelor of Science: Business Analytics & Technology</strong></li>
-                <li class="timeline-text"><strong>Bachelor of Arts: Computer Science</strong></li>
-              </ul>
-
-              <ul>
-
-                <li class="timeline-text">• Cumulative GPA: 3.98 | Major GPA: 4.0</li>
-                
-                <li class="timeline-text">• Honors & Awards: Class Honors Scholarship; Beta Gamma Sigma Honor Society; Dell Honors Award; 3rd Place, National Business Analytics Competition at Manhattan College 2023</li>
-                
-              </ul>
-
-              <p class="timeline-text">
-                <strong>• Relevant Coursework:</strong> Data Science, Database Systems, Big Data & Machine Learning, Intermediate Spreadsheet Modeling, Data Abstraction, Business Analytics, Mathematics for Data Science, Information Systems, Statistics, Software Engineering, Consulting.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">EXTRACURRICULAR ACTIVITIES & LEADERSHIP EXPERIENCES</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Vice President - Trinity University Data Analytics Club</h4>
-
-              <span>Aug 2024 –  2025</span>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Vice President of TWIST – Trinity Women in Science and Technology</h4>
-
-              <span>Aug 2022 – May 2023</span>
-
-              <p class="timeline-text">
-                <i>(TWIST is dedicated to the advancement of women in STEM fields at Trinity University and in the greater San Antonio community)</i>
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-                <h4 class="h4 timeline-item-title">Training Co-host of PISE – Project Incubator for Young Social Entrepreneurs</h4>
-
-              <span>Apr 2021 – Aug 2021</span>
-
-              <p class="timeline-text">
-                <i>(PISE is a Youth Organization that provides personal development opportunities for youths who are passionate about making a difference in their home regions and Vietnam.)</i>
-              </p>
-            </li>
-
-          </ol>
-
-                  </section>
-
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">HONORS, AWARDS & ACHIEVEMENTS</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-              <p class="timeline-text">
-                Honors Scholarship for the top 15 students in the 2025 class.
-              </p>
-            </li>
-            <li class="timeline-item">
-              <p class="timeline-text">
-                Dell Award in Business Analytics & Technology based on academic and extracurricular achievements.
-            </li>
-            <li class="timeline-item">
-              <p class="timeline-text">
-                Beta Gamma Sigma Honor Society member (top 10% in Michael Neidorff School of Business).
-              </p>
-            </li>
-            <li class="timeline-item">
-              <p class="timeline-text">
-                Published paper on <a href="https://www.mdpi.com/1420-3049/28/10/4191">the influence of anionic lipid nanodomains on membrane disruption</a> and <a href="https://www.sciencedirect.com/science/article/pii/S0301462223000443">protein folding</a> using multiscale
-              molecular dynamics simulations.
-            </li>
-
-          </ol>
-
-        </section>
-        <p class="image-description">Website last update: Jan 07, 2025<p>
-
-
-
-       
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <!-- <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Data Science</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Computer Science</button>
-            </li>
-
-          </ul> -->
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Data Science</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Computer Science</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-            <li class="project-item  active" data-filter-item data-category="Data Science">
-              <a href="https://public.tableau.com/app/profile/ngoc.nguyen5931/viz/PricingPerformanceAnalysis-GoodwillSanAntonio/Goodwill-PricingPerformancePresentation">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/goodwill-project.png" alt="goodwill-project" loading="lazy">
-                </figure>
-
-                <h3 class="project-title"><strong>Consulting Project:</strong> Pricing performance analysis for Goodwill San Antonio</h3>
-                <p class="project-description" >Analysis and Consulting Reports on pricing performance and operations change of 28 Goodwill SA stores, based on historical 2,500,000 data points.</p>
-                <p class="project-category">Data Science</p>
-
-              </a>
-            </li>
-            <li class="project-item  active" data-filter-item data-category="Data Science">
-              <a href="https://drive.google.com/drive/folders/1_zltyRAnT6I8L1DcARR4R3WkMaxVuBiu?usp=sharing">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/bac-2023.jpeg" alt="bac-project" loading="lazy">
-                </figure>
-
-                <h3 class="project-title"><strong>Third prize:</strong> Business Analytics Competition at Manhattan College 2023</h3>
-                <p class="project-description" >A comprehensive analysis on Food Safety in Sub-Saharan Africa and Central/Caribbean America.</p>
-                <p class="project-category">Data Science</p>
-
-              </a>
-            </li>
-            <li class="project-item  active" data-filter-item data-category="Computer Science">
-              <a href="https://github.com/nhngoc02/KennelProject_SWE">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/kennel-link-project.png" alt="kennel-project" loading="lazy">
-                </figure>
-
-                <h3 class="project-title"><strong>Software Engineering Project:</strong> Kennel Web Portal - Kennel Link</h3>
-                <p class="project-description" > An interactive website for a kennel business, developed using Node.js and Express.js for the backend, HTML/CSS for the frontend, and MongoDB database.</p>
-                <p class="project-category">Computer Science</p>
-
-              </a>
-            </li>
-            <li class="project-item  active" data-filter-item data-category="Data Science">
-              <a href="https://github.com/nhngoc02/Dell_MWD">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/dell-project.jpg" alt="dell-project" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Dell Supply Chain Analytics</h3>
-                <p class="project-description" >Predictive analysis on the number of missing, wronged or damaged (MWD) order units of Dell's different carriers.</p>
-                <p class="project-category">Data Science</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="Data Science">
-              <a href="https://github.com/nhngoc02/AmesHousePrice">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/house-price-project.jpg" alt="house-price-project" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Ames House Price Prediction</h3>
-                <p class="project-description" >Prediction model for house prices in the Ames housing dataset from 81 variables of house characteristics.</p>
-                <p class="project-category">Data Science</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="Computer Science">
-              <a href="https://github.com/nhngoc02/scala-space-game">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/space-game-project.jpg" alt="space-game-project" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Scala Space Game</h3>
-                <p class="project-description">An engaging Galaga-style space shooting game using Scala programming language.</p>
-                <p class="project-category">Computer Science</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="Data Science">
-              <a href="https://trinity0-my.sharepoint.com/:x:/r/personal/nnguyen5_trinity_edu/Documents/AdventureWorks_Dashboard.xlsx?d=wa0bac37c38024072aecab20c3be61bae&csf=1&web=1&e=Twq9BH">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/excel-dashboard.jpg" alt="excel-project" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Excel Dashboard: Analyze total sales and growth trends for AdventureWorks.</h3>
-                <p class="project-description"></p>
-
-                <p class="project-category">Data Science</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="Data Science">
-              <a href="https://github.com/nhngoc02/credit-card">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/credit-card-project.jpg" alt="credit-card-project" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Credit Card behavior analysis</h3>
-                <p class="project-description" >Regression model & hypothesis testing to explore the sample applicants’ credit card behaviors and other personal and financial aspects.</p>
-                <p class="project-category">Data Science</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="Data Science">
-              <a href="https://drive.google.com/file/d/1tHsCkehtfO1C9dAi64m47R2jUHXCVID4/view?usp=sharing">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/walmart-tableau.png" alt="walmart-retail-project" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Walmart Retail - Tableau Dashboard</h3>
-                <p class="project-description" >An interactive dashboard on Walmart sales and profits across different locations, product categories and customer segments.</p>
-                <p class="project-category">Data Science</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="Data Science">
-              <a href="https://drive.google.com/file/d/1y2OQ9PXGEZOn4Msv_OSdAFDEWNu1I3jo/view?usp=sharing">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/RecruitingPipelineReport.png" alt="house-price-project" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Recruiting Pipeline - PowerBI Dashboard</h3>
-                <p class="project-description" >An dashboard to report and track applicant status across various recruiting stages for KPIM Company.</p>
-                <p class="project-category">Data Science</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="Data Science">
-              <a href="https://drive.google.com/file/d/1VHtZS--IILqqo8u0l8z3mgSizc03z8PZ/view?usp=sharing">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/ProductDeliveryReport.png" alt="house-price-project" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Product Delivery Report - PowerBI Dashboard</h3>
-                <p class="project-description" >An interactive dashboard to analyze the delivery status for KPIM Operating Department.</p>
-                <p class="project-category">Data Science</p>
-
-              </a>
-            </li>
-
-
-
-          </ul>
-
-        </section>
-        <p class="image-description">Website last update: Jan 07, 2025<p>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="activities" data-page="activities">
-
-        <header>
-          <h2 class="h2 article-title">Activities</h2>
-        </header>
-
-        <h2 id="career-objectives">Business Analytics Competition & Conference 2023 at Manhattan College</h2>
-          <p class="career-objectives">
-            I was part of a four-member team representing Trinity University at BAC 2023, where we delved into Food Safety in Sub-Saharan Africa and Central/Caribbean America. Our journey spanned from February to May 2023, engaging in thorough research and analysis of food safety in Sub-Saharan Africa. In May, we went to New York to present our findings, participating in a 15-hour datathon to assess food safety conditions in Central/Caribbean America, comparing them with Sub-Saharan Africa. Our dedication and perseverance earned us the third-place award out of 24 teams from across the United States. 
+      <!-- Portfolio -->
+      <section class="page" id="portfolio" data-page="portfolio">
+        <h2 class="page-title">Portfolio</h2>
+        <p class="muted">Select a project to read the context behind it before opening the project itself.</p>
+
+        <div class="segmented" role="tablist" aria-label="Project type">
+          <button class="segment active" role="tab" aria-selected="true" data-filter="data">Data Analysis</button>
+          <button class="segment" role="tab" aria-selected="false" data-filter="swe">Software Engineering</button>
+        </div>
+
+        <ul class="project-grid" data-project-grid></ul>
+      </section>
+
+      <!-- Activities -->
+      <section class="page" id="activities" data-page="activities">
+        <h2 class="page-title">Activities</h2>
+
+        <article class="activity">
+          <h3 class="section-title">ICTIS 2025, International Conference on Information and Communication Technology for Intelligent Systems</h3>
+          <p>
+            In May 2025 I presented my paper <em>A YOLO Model for Car License Plates Detection and Recognition</em>,
+            written with Dr. Eva Tuba and Dr. Milan Tuba, at ICTIS 2025 at Cornell University's NYC-ILR
+            Conference Center in New York. Most license plate research tests plates from only one country. The main goal
+            of the research is to see how well YOLO object detection models handle very different plate styles and image qualities, using
+            datasets from China (CCPD), Brazil (UFPR-ALPR), and Taiwan (AOLP), plus a combined set of all three. The
+            trained models were great at detecting license plates, scoring above 98 out of 100 (mAP50 above 0.98), but
+            drawing a box that fits the plate's exact edges was harder (mAP50-95 of 0.60 to 0.73), which is where I see
+            the most room for future work.
           </p>
-          <br>
-            <div class="image-container">
-              <div class="image-wrapper">
-                <img src="./assets/images/bac-1.png" width="280" class="align-left" />
-                <em class="image-description">BAC 2023, New York, NY</em>
-              </div>
-              <div class="image-wrapper">
-                <img src="./assets/images/bac-2.png" width="280" class="align-center" />
-                <em class="image-description">BAC 2023, New York, NY</em>
-              </div>
-              <div class="image-wrapper">
-                <img src="./assets/images/bac-3.png"  width="280" class="align-right" />
-                <em class="image-description">BAC 2023, New York, NY</em>
-              </div>
-            </div>
-            <p class="career-objectives">This incredible experience not only connected me with exceptional peers and professors in the field of business analytics, but also allowed me to engage with industry professionals and discuss the impact of technology, particularly AI, on company operations.</p>
-          <br>
-
-        <h2 id="career-objectives">American Physical Society (APS) Conference 2023</h2>
-        <p class="career-objectives">
-          In March 2023, I had a chance to represent my research lab to present our work at the APS Conference. In particular, I showcased the implementation of machine learning to quantify the disruption of amyloid aggregates on the clustering of lipid molecules, which is commonly associated with Alzheimer’s disease. This experience was more than just a spotlight moment – it connected me with fellow researchers and exposed me to diverse tools and technologies used in other labs nationwide.
-
-        </p>
-        <br>
-          <div class="image-container">
-            <div class="image-wrapper">
-              <img src="./assets/images/aps-1.png" width="280" class="align-left" />
-              <em class="image-description">APS Conference 2023, Las Vegas, NV</em>
-            </div>
-            <div class="image-wrapper">
-              <img src="./assets/images/aps-2.png" width="280" class="align-center" />
-              <em class="image-description">APS Conference 2023, Las Vegas, NV</em>
-            </div>
-            <div class="image-wrapper">
-              <img src="./assets/images/aps-3.png"  width="280" class="align-right" />
-              <em class="image-description">APS Conference 2023, Las Vegas, NV</em>
-            </div>
+          <div class="gallery gallery-3">
+            <figure><img src="./assets/images/ictis-presenting.jpg" alt="Nora presenting her YOLO license plate research at ICTIS 2025" loading="lazy"></figure>
+            <figure><img src="./assets/images/ictis-group.jpg" alt="ICTIS 2025 presenters and organizers in front of the conference banner" loading="lazy"></figure>
+            <figure><img src="./assets/images/ictis-result.jpg" alt="Model detecting a Chinese license plate, labeled with overlap and confidence scores" loading="lazy"></figure>
           </div>
-          <p>View additional materials on my presentaion: <a href="https://meetings.aps.org/Meeting/MAR23/Session/F46.5">Abstract</a>, <a href="https://docs.google.com/presentation/d/1Vh6Pa3miE5wze94OPgqDq-WWi0DQYbas/edit?usp=sharing&ouid=114594587066569468338&rtpof=true&sd=true">Presentation slides</a>.</p>
-          
-        <br>
-
-          <h2 id="career-objectives">Art & Cultural Coordinator of Trinity Vietnamese Student Association (VSA)</h2>
-          <p class="career-objectives">
-            As the Art & Cultural Coordinator of Trinity Vietnamese Student Association (VSA) for 2 years, I have designed content structures for various events and meetings, engaging 50 club members. From organizing a Spring Roll Cooking Class with 50 attendants to orchestrating a Vietnamese cuisine demonstration and meal preparation for 200 students, as well as organizing Vietnamese game nights, I aim to create memorable and enriching cultural experiences. Additionally, I actively participated in the lunar new year fashion show, showcasing the beauty of Vietnamese traditional attire, Áo dài.
+          <p>
+            Paper: <a href="https://link.springer.com/chapter/10.1007/978-981-95-1361-1_50" target="_blank" rel="noopener">Springer, Smart Innovation, Systems and Technologies, vol. 126</a> ·
+            Code: <a href="https://github.com/nhngoc02/license_plate_detection" target="_blank" rel="noopener">GitHub</a>
           </p>
-          <br>
-            <div class="image-container">
-              <div class="image-wrapper">
-                <img src="./assets/images/vsa-1.png" width="280" class="align-left" />
-                <em class="image-description">Trinity University Lunar New Year show 2023, San Antonio, TX</em>
-              </div>
-              <div class="image-wrapper">
-                <img src="./assets/images/vsa-2.png" width="280" class="align-center" />
-                <em class="image-description">Trinity University Lunar New Year show 2023, San Antonio, TX</em>
-              </div>
-              <div class="image-wrapper">
-                <img src="./assets/images/vsa-3.png"  width="280" class="align-right" />
-                <em class="image-description">Vietnamese Cuisine demonstration, San Antonio, TX</em>
-              </div>
-            </div>
-          <br>
+        </article>
 
-          <h2 id="career-objectives">Vice President of TWIST – Trinity Women in Science and Technology</h2>
-          <p class="career-objectives">
-            In my role as the Education VP of TWIST, I promoted STEM in female undergraduates (70 club members) through the Mentorship Program and STEM events (women’s history month celebration, STEM Research workshops and a webinar with black female professionals in the STEM industry).
+        <article class="activity">
+          <h3 class="section-title">Business Analytics Competition &amp; Conference 2023, Manhattan College</h3>
+          <p>
+            I was one of four students representing Trinity University at BAC 2023, where our topic was food safety in
+            Sub-Saharan Africa and Central America and the Caribbean. From February to May 2023 we researched and
+            analyzed food safety in Sub-Saharan Africa. In May we traveled to New York to present our findings and
+            competed in a 15-hour datathon comparing conditions in Central America and the Caribbean with Sub-Saharan
+            Africa. We placed third out of 24 teams from across the United States.
           </p>
-          <br>
-            <div class="image-container">
-              <div class="image-wrapper">
-                <img src="./assets/images/twist-1.png" width="280" class="align-left" />
-                <!-- <em class="image-description">Trinity University Lunar New Year show 2023, San Antonio, TX</em> -->
-              </div>
-              <div class="image-wrapper">
-                <img src="./assets/images/twist-2.png" width="280" class="align-right" />
-                <!-- <em class="image-description">Trinity University Lunar New Year show 2023, San Antonio, TX</em> -->
-              </div>
-            </div>
-          <!-- <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul> -->
-
-        <!-- </section> -->
-
-      </article>
-
-
-
-
-  </main>
-
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
+          <div class="gallery gallery-3">
+            <figure><img src="./assets/images/bac-1.jpg" alt="BAC 2023 presentation" loading="lazy"></figure>
+            <figure><img src="./assets/images/bac-2.jpg" alt="BAC 2023 team" loading="lazy"></figure>
+            <figure><img src="./assets/images/bac-3.jpg" alt="BAC 2023 award" loading="lazy"></figure>
+          </div>
+          <p>
+            Beyond the result, the competition connected me with peers and professors in business analytics and with
+            industry professionals, and we talked a lot about how AI is changing the way companies operate.
+          </p>
+        </article>
+
+        <article class="activity">
+          <h3 class="section-title">American Physical Society (APS) March Meeting 2023</h3>
+          <p>
+            In March 2023 I presented my lab's work at the APS conference in Las Vegas. I showed how we used machine
+            learning to quantify how amyloid aggregates disrupt the clustering of lipid molecules, a process associated
+            with Alzheimer's disease. The trip also introduced me to researchers from other labs and the tools they use.
+          </p>
+          <div class="gallery gallery-3">
+            <figure><img src="./assets/images/aps-1.jpg" alt="APS Conference 2023" loading="lazy"></figure>
+            <figure><img src="./assets/images/aps-2.jpg" alt="APS Conference 2023" loading="lazy"></figure>
+            <figure><img src="./assets/images/aps-3.jpg" alt="APS Conference 2023" loading="lazy"></figure>
+          </div>
+          <p>
+            Materials: <a href="https://meetings.aps.org/Meeting/MAR23/Session/F46.5" target="_blank" rel="noopener">abstract</a>,
+            <a href="https://docs.google.com/presentation/d/1Vh6Pa3miE5wze94OPgqDq-WWi0DQYbas/edit?usp=sharing" target="_blank" rel="noopener">presentation slides</a>.
+          </p>
+        </article>
+
+        <article class="activity">
+          <h3 class="section-title">Art &amp; Cultural Coordinator, Trinity Vietnamese Student Association</h3>
+          <p>
+            For two years I planned the content for VSA events and meetings for our 50 members. That included a spring
+            roll cooking class for 50 attendees, a Vietnamese cooking demonstration and meal for 200 students, and
+            Vietnamese game nights. I also walked in the Lunar New Year fashion show to share the áo dài, Vietnam's
+            traditional dress.
+          </p>
+          <div class="gallery gallery-3">
+            <figure><img src="./assets/images/vsa-1.jpg" alt="Lunar New Year show 2023" loading="lazy"><figcaption>Lunar New Year show 2023</figcaption></figure>
+            <figure><img src="./assets/images/vsa-2.jpg" alt="Lunar New Year show 2023" loading="lazy"><figcaption>Lunar New Year show 2023</figcaption></figure>
+            <figure><img src="./assets/images/vsa-3.jpg" alt="Vietnamese cooking demonstration" loading="lazy"><figcaption>Vietnamese cooking demonstration</figcaption></figure>
+          </div>
+        </article>
+
+        <article class="activity">
+          <h3 class="section-title">Vice President of Education, TWIST (Trinity Women in Science and Technology)</h3>
+          <p>
+            As Education VP, I supported our 70 members through the mentorship program and STEM events, including a
+            Women's History Month celebration, research workshops, and a webinar with Black women working in STEM.
+          </p>
+          <div class="gallery gallery-2">
+            <figure><img src="./assets/images/twist-1.jpg" alt="TWIST event" loading="lazy"></figure>
+            <figure><img src="./assets/images/twist-2.jpg" alt="TWIST event" loading="lazy"></figure>
+          </div>
+        </article>
+      </section>
+
+      <footer class="footer">Last updated October 2026</footer>
+    </main>
+  </div>
+
+  <!-- Project details dialog, filled from assets/js/projects.js -->
+  <dialog class="project-dialog" data-project-dialog aria-labelledby="dialog-title">
+    <button class="dialog-close" data-dialog-close aria-label="Close">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" /></svg>
+    </button>
+    <div data-dialog-body></div>
+  </dialog>
+
+  <script src="./assets/js/projects.js"></script>
   <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
 
 </html>
