@@ -35,8 +35,8 @@ const PROJECTS = [
     label: 'Published paper, ICTIS 2025',
     image: './assets/images/license-plate-project.jpg',
     summary: 'YOLO license plate detection across datasets from China, Brazil, and Taiwan.',
-    context: 'Most license plate detection studies train and test on plates from a single country, even though large datasets exist for many regions. I wanted to see how well YOLO models handle plates from different places, and whether mixing regions helps or hurts.',
-    approach: 'With Eva Tuba and Milan Tuba, I trained YOLOv8 models on three datasets (CCPD from China, UFPR-ALPR from Brazil, and AOLP from Taiwan) and on a combined dataset covering all three, then compared them on precision, mAP50, and mAP50-95. I presented the work at ICTIS 2025.',
+    context: 'Most license plate detection studies train and test on plates from a single country, even though large datasets exist for many regions. I wanted to see how well YOLO models handle plates from different places, and whether mixing regions and image quality have positive or negative impact on the model performance.',
+    approach: 'I trained YOLOv8 models on three datasets (CCPD from China, UFPR-ALPR from Brazil, and AOLP from Taiwan) and on a combined dataset covering all three, then compared them on precision, mAP50, and mAP50-95. I presented the work at ICTIS 2025.',
     outcome: 'All four models reached a test mAP50 above 0.98, with the CCPD and AOLP models at 0.995. Scores at stricter IoU thresholds (mAP50-95 between 0.60 and 0.73) showed that tighter bounding boxes are the main area for improvement. Published by Springer in Smart Innovation, Systems and Technologies, vol. 126.',
     tools: ['Python', 'YOLOv8', 'Ultralytics', 'Computer vision', 'Jupyter'],
     links: [
