@@ -10,21 +10,10 @@
   --accent-soft: #f4e9e4;
   --radius: 10px;
   --shadow: 0 1px 2px rgba(28, 25, 23, 0.04), 0 4px 16px rgba(28, 25, 23, 0.06);
+  color-scheme: light;
   --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #171413;
-    --surface: #211d1b;
-    --text: #efe8e2;
-    --text-muted: #a89c95;
-    --border: #382f2c;
-    --accent: #d9a3a0;
-    --accent-soft: #33231f;
-    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.3);
-  }
-}
 
 /* ---------- Base ---------- */
 
