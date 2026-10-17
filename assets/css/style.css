@@ -1,30 +1,19 @@
 /* ---------- Tokens ---------- */
 
 :root {
-  --bg: #fafaf9;
-  --surface: #ffffff;
-  --text: #1c1917;
-  --text-muted: #6b6560;
-  --border: #e7e5e4;
-  --accent: #2f5d50;
-  --accent-soft: #e8efec;
+  --bg: #faf6f1;
+  --surface: #fffdfa;
+  --text: #1f1a18;
+  --text-muted: #6f6460;
+  --border: #ece3d9;
+  --accent: #7a2e2c;
+  --accent-soft: #f4e9e4;
   --radius: 10px;
   --shadow: 0 1px 2px rgba(28, 25, 23, 0.04), 0 4px 16px rgba(28, 25, 23, 0.06);
+  color-scheme: light;
   --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #161514;
-    --surface: #1f1e1c;
-    --text: #edeae6;
-    --text-muted: #a29d97;
-    --border: #33312e;
-    --accent: #8cc2b0;
-    --accent-soft: #24302c;
-    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.3);
-  }
-}
 
 /* ---------- Base ---------- */
 
@@ -79,6 +68,7 @@ strong { font-weight: 600; }
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 20px;
+  box-shadow: 0 0 0 3px var(--surface), 0 0 0 4px var(--border);
 }
 
 .name { font-size: 1.5rem; font-weight: 700; line-height: 1.2; margin: 0; letter-spacing: -0.01em; }
