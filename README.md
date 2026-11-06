@@ -2,7 +2,7 @@
 
 My personal website and portfolio: **https://nhngoc02.github.io/**
 
-I'm a Project Manager at Applied Materials working on workflow automation, business intelligence, and supply-chain operations. This site collects my resume, my data analysis and software engineering projects, and some of the activities I've been part of.
+I'm a Program Manager at Applied Materials working on workflow automation, business intelligence, and supply-chain operations. This site collects my resume, my data analysis and software engineering projects, and some of the activities I've been part of.
 
 ![Desktop view of the portfolio page](./website-demo-image/desktop.png)
 
